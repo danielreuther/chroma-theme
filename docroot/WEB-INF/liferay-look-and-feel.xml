@@ -5,7 +5,7 @@
 	<compatibility>
 		<version>6.2.0+</version>
 	</compatibility>
-	<theme id="boobank" name="Boobank">
+	<theme id="newbank" name="Newbank">
 		<template-extension>vm</template-extension>
 		<settings>
 			<setting key="portlet-setup-show-borders-default" value="false" />
