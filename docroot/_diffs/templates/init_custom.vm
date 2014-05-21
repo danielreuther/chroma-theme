@@ -1,0 +1,1 @@
+#set ($is_omni_admin=$permissionChecker.isOmniadmin())

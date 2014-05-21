@@ -1,9 +1,171 @@
 @import "compass";
 @import "mixins";
 
+$colorHeading: #5E60B2;
+$colorHighlight: #953537;
+$colorHighlightGreen: #5CB260;
+
+@font-face {
+	font-family: 'exo2';
+	src: url('../fonts/exo2/Exo2.0-Regular-webfont.eot');
+    src: url('../fonts/exo2/Exo2.0-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/exo2/Exo2.0-Regular-webfont.woff') format('woff'),
+         url('../fonts/exo2/Exo2.0-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/exo2/Exo2.0-Regular-webfont.svg#exo_2.0regular') format('svg');
+}
+
 /* ---------- Base styles ---------- */
 
 .aui {
+	height: 100%;
+
+	.portal-normal {
+		background: url(../images/bg.png) repeat-x #F5F5F5;
+		min-height: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+		
+		&.dockbar-ready {
+			margin-top: 41px;
+		}
+	}
+	
+	a {
+		color: $colorHeading;
+		
+		&:hover {
+			color: $colorHighlight;
+		}
+	}
+	
+	h2 {
+		color: $colorHeading;
+		font-family: 'exo2';
+		font-size: 2.2em;
+	}
+	
+	#wrapper {
+		height: 100%;
+	    padding: 0;
+	    max-width: 100%;
+    	width: 1080px;
+    	margin: auto;
+	}
+
+	#banner {
+		height: 111px;
+		
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -0.25em;
+		}
+
+		#heading {
+			background: url(../images/logo.png) no-repeat;
+			height: 52px;
+			width: 335px;
+			display: inline-block;
+			vertical-align: middle;
+		
+			.site-name {
+				display: none;
+			}
+		}
+
+		.site-title {
+			margin: 0;
+		}
+	}
+
+	#subbanner {
+		font-family: 'exo2';
+		font-size: 38px;
+		line-height: 68px;
+		margin-top: 5px;
+		text-align: center;
+		vertical-align: middle;
+		color: $colorHeading;
+	}
+
+	#main-content > .row-fluid,
+	#content .breadcrumb {
+	    background: #FFF;
+	    margin-bottom: 18px;
+	    @include box-shadow(0 0 3px #999);
+	    @include border-radius(4px);
+	}
+
+	#main-content {
+		.portlet-column {
+			border-left: 1px solid #EEEEEE;
+			margin-bottom: 12px;
+			margin-top: 12px;
+			min-height: 220px;
+		}
+		
+		.portlet-column-first {
+			border: none;
+		}
+		
+		.portlet-borderless {
+			padding: 12px;
+		}
+	}
+
+	#navigation {
+		margin-top: 2.65em;
+		float: right;
+
+		.nav {
+			margin: 0;
+
+			> li {
+				margin-left: 2px;
+
+				> a {
+					font-family: 'exo2';
+					background-color: #666;
+					color: #BBB;
+					
+					&:hover, .selected {
+						color: #888;
+						background-color: #EEE;
+					}
+				}
+			}
+
+			#sign-in, #sign-out {
+				background-color: $colorHighlightGreen;
+				color: #EEEEEE;
+
+				&:after {
+					content: "\f090";
+					font-family: 'fontawesome-alloy';
+					margin-left: 6px;
+				}
+				
+				&:hover {
+					background-color: darken($colorHighlightGreen, 5%);
+				}
+			}
+			
+			#sign-out {
+				background-color: $colorHighlight;
+				
+				&:after {
+					content: "\f08b";
+				}
+				
+				&:hover {
+					background-color: darken($colorHighlight, 5%);
+				}
+			}
+		}
+	}
+	
 	#wrapper-main-carousel {
 		height: 250px;
 		margin-bottom: 3em;
@@ -19,6 +181,23 @@
 				padding: 20px;
 				width: 270px;
 			}
+			
+			
 		}
 	}
+
+	#content {
+		min-height: 70%;
+	}
+	
+	#footer {
+		text-align: right;
+	}
+	
+	.portlet-dockbar {
+		.dockbar {
+			position: fixed;
+			z-index: 1000;
+		}
+	} 
 }
