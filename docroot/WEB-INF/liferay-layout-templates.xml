@@ -3,10 +3,10 @@
 
 <layout-templates>
 	<custom>
-		<layout-template id="boobank_frontpage_layout_tpl" name="Boobank Frontpage">
-			<template-path>/layouttpl/custom/boobank-frontpage.tpl</template-path>
-			<wap-template-path>/layouttpl/custom/boobank-frontpage.wap.tpl</wap-template-path>
-			<thumbnail-path>/layouttpl/custom/boobank-frontpage.png</thumbnail-path>
+		<layout-template id="newbank_frontpage_layout_tpl" name="Newbank Frontpage">
+			<template-path>/WEB-INF/layouttpl/newbank-frontpage.tpl</template-path>
+			<wap-template-path>/WEB-INF/layouttpl/newbank-frontpage.wap.tpl</wap-template-path>
+			<thumbnail-path>/WEB-INF/layouttpl/newbank-frontpage.png</thumbnail-path>
 		</layout-template>
 	</custom>
 </layout-templates>

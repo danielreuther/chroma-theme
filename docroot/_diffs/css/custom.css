@@ -1,0 +1,24 @@
+@import "compass";
+@import "mixins";
+
+/* ---------- Base styles ---------- */
+
+.aui {
+	#wrapper-main-carousel {
+		height: 250px;
+		margin-bottom: 3em;
+
+		.carousel-item {
+			height: 100%;
+			width: 100%;
+			background: #FFF no-repeat 310px top;
+			@include border-radius(4px);
+			
+			> span {
+				display: block;
+				padding: 20px;
+				width: 270px;
+			}
+		}
+	}
+}
