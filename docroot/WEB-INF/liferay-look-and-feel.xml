@@ -13,5 +13,8 @@
 		<color-scheme id="01" name="Default">
 			<css-class>default</css-class>
 		</color-scheme>
+		<color-scheme id="02" name="Dashboard">
+			<css-class>dashboard</css-class>
+		</color-scheme>
 	</theme>
 </look-and-feel>

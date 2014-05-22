@@ -1,6 +1,11 @@
 @import "compass";
 @import "mixins";
 
+@import url(custom_default.css);
+@import url(custom_dashboard.css);
+@import url(custom_responsive.css);
+@import url(custom_extras.css);
+
 $colorHeading: #5E60B2;
 $colorHighlight: #953537;
 $colorHighlightGreen: #5CB260;
@@ -136,53 +141,6 @@ $colorHighlightGreen: #5CB260;
 					}
 				}
 			}
-
-			#sign-in, #sign-out {
-				background-color: $colorHighlightGreen;
-				color: #EEEEEE;
-
-				&:after {
-					content: "\f090";
-					font-family: 'fontawesome-alloy';
-					margin-left: 6px;
-				}
-				
-				&:hover {
-					background-color: darken($colorHighlightGreen, 5%);
-				}
-			}
-			
-			#sign-out {
-				background-color: $colorHighlight;
-				
-				&:after {
-					content: "\f08b";
-				}
-				
-				&:hover {
-					background-color: darken($colorHighlight, 5%);
-				}
-			}
-		}
-	}
-	
-	#wrapper-main-carousel {
-		height: 250px;
-		margin-bottom: 3em;
-
-		.carousel-item {
-			height: 100%;
-			width: 100%;
-			background: #FFF no-repeat 310px top;
-			@include border-radius(4px);
-			
-			> span {
-				display: block;
-				padding: 20px;
-				width: 270px;
-			}
-			
-			
 		}
 	}
 
