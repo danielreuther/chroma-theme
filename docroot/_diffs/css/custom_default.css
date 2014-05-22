@@ -1,7 +1,64 @@
 @import "compass";
 @import "mixins";
 
+$colorBackground: #F5F5F5;
+
 .aui .default {
+	background: url(../images/bg.png) repeat-x $colorBackground;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	#wrapper {
+	    max-width: 100%;
+	    min-width: 460px;
+    	width: 1080px;
+	}
+
+	#banner {
+		height: 111px;
+		
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -0.25em;
+		}
+
+		#heading {
+			background: url(../images/logo.png) no-repeat;
+			height: 52px;
+			width: 335px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	#main-content > .row-fluid,
+	#content .breadcrumb {
+	    background: #FFF;
+	    margin-bottom: 18px;
+	    @include box-shadow(0 0 3px #999);
+	    @include border-radius(4px);
+	}
+
+	#main-content {
+		.portlet-column {
+			border-left: 1px solid #EEEEEE;
+			margin-bottom: 12px;
+			margin-top: 12px;
+			min-height: 220px;
+		}
+		
+		.portlet-column-first {
+			border: none;
+		}
+		
+		.portlet-borderless {
+			padding: 12px;
+		}
+	}
+
 	#navigation {
 		margin-top: 2.65em;
 		float: right;
@@ -9,5 +66,9 @@
 		.nav-navigation-toggle {
 			float: none;
 		}
+	}
+	
+	#content {
+		min-height: 70%;
 	}
 }

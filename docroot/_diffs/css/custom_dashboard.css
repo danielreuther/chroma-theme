@@ -1,7 +1,46 @@
 @import "compass";
 @import "mixins";
 
+$colorBackgroundHighlight: #9191EA;
+$navigationWidth: 220px;
+$dockbarHeight: 41px;
+
 .aui .dashboard {
+	padding: 0;
+
+	#wrapper {
+		margin-left: $navigationWidth;
+	}
+
+	#banner {
+		background: #555555;
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+	    top: 0;
+	    width: $navigationWidth;
+	    margin-top: $dockbarHeight;
+
+	    #heading {
+			background: url(../images/logo_square.png) no-repeat;
+			height: 200px;
+			width: 200px;
+			margin: 10px;
+		}
+	}
+
+	#subbanner {
+		background: url(../images/bg_navbar.png) repeat-x $colorBackgroundHighlight;
+	    color: #555;
+	    font-size: 28px;
+	    height: $dockbarHeight;
+	    margin: 0;
+        position: fixed;
+	    right: 0;
+	    top: 0;
+	    left: 0;
+	}
+
 	#navigation {
 		.nav {
 			float: none;
@@ -17,6 +56,18 @@
 				height: auto !important;
     			overflow: visible !important;
 			}
+		}
+	}
+
+	#main-content {
+		padding: 0 20px;
+	}
+
+	.dockbar {
+		margin: 0;
+		
+		#_145_navSiteNavigationNavbarBtn {
+			display: none;
 		}
 	}
 }

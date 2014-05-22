@@ -15,6 +15,12 @@
 				}
 			}
 		}
+
+		.portlet-dockbar {
+			.btn-navbar {
+					padding: 3px 8px;
+			}
+		}
 	}
 
 	.aui .default {
