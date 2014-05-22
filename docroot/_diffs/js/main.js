@@ -1,5 +1,5 @@
 AUI().ready(
-	'aui-carousel',
+	'aui-carousel', 'liferay-hudcrumbs', 'liferay-navigation-interaction', 'aui-sortable-layout', 'aui-toggler',
 	function(A) {
 		var navigation = A.one('#navigation');
 
@@ -11,6 +11,18 @@ AUI().ready(
 
 		if (siteBreadcrumbs) {
 			siteBreadcrumbs.plug(A.Hudcrumbs);
+		}
+
+		var dockbar = A.one(".dashboard .dockbar");
+
+		if (dockbar) {
+			new A.Toggler(
+				{
+					content: dockbar,
+					header: '#dockbarToggleBtn',
+					expanded: false
+				}
+			);
 		}
 
 		var btnNavigation = A.one('#navSiteNavigationNavbarBtn');

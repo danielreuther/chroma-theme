@@ -66,6 +66,10 @@ $colorBackground: #F5F5F5;
 		.nav-navigation-toggle {
 			float: none;
 		}
+
+		#dockbarToggleBtn {
+			display: none;
+		}
 	}
 	
 	#content {
