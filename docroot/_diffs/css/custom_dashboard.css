@@ -2,5 +2,21 @@
 @import "mixins";
 
 .aui .dashboard {
-	
+	#navigation {
+		.nav {
+			float: none;
+
+			> li {
+				float: none;
+    			margin: 2px 10px;
+			}
+		}
+
+		.navbar-inner {
+			> .nav-collapse {
+				height: auto !important;
+    			overflow: visible !important;
+			}
+		}
+	}
 }

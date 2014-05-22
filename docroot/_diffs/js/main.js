@@ -13,6 +13,20 @@ AUI().ready(
 			siteBreadcrumbs.plug(A.Hudcrumbs);
 		}
 
+		var btnNavigation = A.one('#navSiteNavigationNavbarBtn');
+
+		var navigation = A.one(Liferay.Data.NAV_SELECTOR);
+
+		if (btnNavigation && navigation) {
+			btnNavigation.on(
+				'click',
+				function(event) {
+					btnNavigation.toggleClass('open');
+					navigation.toggleClass('open');
+				}
+			);
+		}
+
 		var mainCarousel = A.one("#main-carousel");
 
 		if (mainCarousel) {

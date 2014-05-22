@@ -121,8 +121,12 @@ $colorHighlightGreen: #5CB260;
 	}
 
 	#navigation {
-		margin-top: 2.65em;
-		float: right;
+		.navbar-inner {
+			background: none;
+			border: none;
+			padding: 0;
+			@include box-shadow(none);
+		}
 
 		.nav {
 			margin: 0;
@@ -132,15 +136,20 @@ $colorHighlightGreen: #5CB260;
 
 				> a {
 					font-family: 'exo2';
-					background-color: #666;
+					background: #666;
 					color: #BBB;
-					
+					@include text-shadow(none);
+
 					&:hover, .selected {
 						color: #888;
 						background-color: #EEE;
 					}
 				}
 			}
+		}
+
+		.nav-uncollapse {
+			display: none;
 		}
 	}
 

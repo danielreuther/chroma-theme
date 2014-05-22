@@ -1,0 +1,13 @@
+@import "compass";
+@import "mixins";
+
+.aui .default {
+	#navigation {
+		margin-top: 2.65em;
+		float: right;
+
+		.nav-navigation-toggle {
+			float: none;
+		}
+	}
+}
