@@ -21,7 +21,7 @@ $dockbarHeight: 41px;
 	    width: $navigationWidth;
 	    margin-top: $dockbarHeight;
 
-	    #heading {
+	    .default-logo {
 			background: url(../images/logo_square.png) no-repeat;
 			height: 200px;
 			width: 200px;
