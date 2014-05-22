@@ -106,6 +106,33 @@ $colorHighlightGreen: #5CB260;
 		.nav-uncollapse {
 			display: none;
 		}
+
+		#sign-in, #sign-out {
+			background-color: $colorHighlightGreen;
+			color: #EEEEEE;
+
+			&:after {
+				content: "\f090";
+				font-family: 'fontawesome-alloy';
+				margin-left: 6px;
+			}
+
+			&:hover {
+				background-color: darken($colorHighlightGreen, 5%);
+			}
+		}
+
+		#sign-out {
+			background-color: $colorHighlight;
+
+			&:after {
+				content: "\f08b";
+			}
+
+			&:hover {
+				background-color: darken($colorHighlight, 5%);
+			}
+		}
 	}
 
 	#footer {
