@@ -1,11 +1,11 @@
 <nav class="$nav_css_class navbar site-navigation" id="navigation" role="navigation">
 	<div class="navbar-inner">
 		<div class="nav-uncollapse nav-navigation-toggle">
-			<ul class="nav nav-pills">
+			<ol class="nav nav-pills">
 				<li>
-					<a id="navSiteNavigationNavbarBtn" class="btn btn-navbar" ><i class="icon-reorder"></i></a>
+					<a id="navSiteNavigationNavbarBtn" class="btn btn-navbar"><i class="icon-reorder"></i></a>
 				</li>
-			</ul>
+			</ol>
 		</div>
 
 		<div class="nav-dockbar-toggle">

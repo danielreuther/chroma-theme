@@ -101,10 +101,25 @@ $colorHighlightGreen: #5CB260;
 					}
 				}
 			}
-		}
 
-		.nav-uncollapse {
-			display: none;
+			.dropdown-menu {
+				background: $colorHeading;
+				border-width: 0;
+				margin: 0;
+
+				&:after, &:before {
+					border-width: 0;
+				}
+
+				a {
+					color: #FFF;
+
+					&:hover {
+						background: none;
+						text-decoration: underline;
+					}
+				}
+			}
 		}
 
 		#sign-in, #sign-out {
