@@ -24,6 +24,7 @@ $dockbarHeight: 41px;
 	    top: 0;
 	    width: $navigationWidth;
 	    margin-top: $dockbarHeight;
+	    z-index: 1040;
 
 	    .default-logo {
 			background: url(../images/logo_square.png) no-repeat;
