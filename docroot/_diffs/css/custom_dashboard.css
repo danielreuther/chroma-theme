@@ -8,6 +8,10 @@ $dockbarHeight: 41px;
 .aui .dashboard {
 	padding: 0;
 
+	#page-wrapper {
+		margin-top: 41px;
+	}
+
 	#wrapper {
 		margin-left: $navigationWidth;
 	}
@@ -33,7 +37,7 @@ $dockbarHeight: 41px;
 		background: url(../images/bg_navbar.png) repeat-x $colorBackgroundHighlight;
 	    color: #555;
 	    font-size: 28px;
-	    height: $dockbarHeight;
+	    line-height: $dockbarHeight;
 	    margin: 0;
         position: fixed;
 	    right: 0;
@@ -72,11 +76,15 @@ $dockbarHeight: 41px;
 		padding: 0 20px;
 	}
 
-	.dockbar {
-		margin: 0;
-		
-		#_145_navSiteNavigationNavbarBtn {
-			display: none;
+	.portlet-dockbar {
+		.dockbar {
+			margin: 0;
+			position: fixed;
+			z-index: 1000;
+
+			.user-avatar-image {
+				max-height: 18px;
+			}
 		}
-	}
+	} 
 }

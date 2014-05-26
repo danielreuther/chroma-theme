@@ -4,9 +4,13 @@
 $colorBackground: #F5F5F5;
 
 .aui .default {
-	background: url(../images/bg.png) repeat-x $colorBackground;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 0;
+
+	#page-wrapper {
+		background: url(../images/bg.png) repeat-x $colorBackground;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
 	#wrapper {
 	    max-width: 100%;

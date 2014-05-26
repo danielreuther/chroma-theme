@@ -163,15 +163,4 @@ $colorHighlightGreen: #5CB260;
 		text-align: right;
 		padding: 0 20px;
 	}
-
-	.portlet-dockbar {
-		.dockbar {
-			position: fixed;
-			z-index: 1000;
-
-			.user-avatar-image {
-				max-height: 18px;
-			}
-		}
-	} 
 }

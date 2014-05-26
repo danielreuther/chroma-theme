@@ -44,8 +44,16 @@
 				    }
 				}
 			}
+		}
+	}
+	
+	.aui .dashboard {
+		#wrapper {
+			margin-left: 0;
+		}
 
-			.nav-uncollapse {
+		#subbanner {
+			.nav-banner-toggle {
 				display: block;
 			}
 		}

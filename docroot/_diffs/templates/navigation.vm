@@ -8,14 +8,6 @@
 			</ol>
 		</div>
 
-		<div class="nav-dockbar-toggle">
-			<ol class="nav nav-pills">
-				<li role="presentation">
-					<a id="dockbarToggleBtn" href="#"><i class="icon-gear"></i></a>
-				</li>
-			</ol>
-		</div>
-
 		<div class="collapse nav-collapse">
 			<ul aria-label="#language ("site-pages")" class="nav nav-collapse nav-pills" role="menubar">
 				#if ($is_signed_in)
