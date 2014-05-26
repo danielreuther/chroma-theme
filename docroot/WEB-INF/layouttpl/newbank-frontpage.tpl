@@ -4,7 +4,7 @@
 <div class="newbank-frontpage" id="main-content" role="main">
 	<div id="wrapper-main-carousel" class="row-fluid">
 		<div id="main-carousel">
-			<div class="carousel-item" style="background-image: url($images_folder/main-carousel/teegardin-5913014568.jpg);">
+			<div class="carousel-item" style="background-image: url($images_folder/main-carousel/teegardin-591301456.jpg);">
 				<span>
 					<h2>Get the highest interest.</h2>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis eu felis non ullamcorper. Sed a arcu ac nisl congue. 
