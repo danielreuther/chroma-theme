@@ -2,8 +2,8 @@
 	<div class="navbar-inner">
 		<div class="nav-uncollapse nav-navigation-toggle">
 			<ol class="nav nav-pills">
-				<li>
-					<a id="navSiteNavigationNavbarBtn" class="btn btn-navbar"><i class="icon-reorder"></i></a>
+				<li class="nav-item-sitenavigationtoggle">
+					<a class="btn btn-navbar"><i class="icon-reorder"></i></a>
 				</li>
 			</ol>
 		</div>
@@ -18,6 +18,12 @@
 
 		<div class="collapse nav-collapse">
 			<ul aria-label="#language ("site-pages")" class="nav nav-collapse nav-pills" role="menubar">
+				#if ($is_signed_in)
+					<li class="nav-item-dockbartoggle">
+						<a href="#"><i class="icon-gear"></i></a>
+					</li>
+				#end
+
 				#foreach ($nav_item in $nav_items)
 						#set ($nav_item_attr_selected="")
 						#set ($nav_item_attr_has_popup="")

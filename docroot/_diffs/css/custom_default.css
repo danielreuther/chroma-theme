@@ -66,6 +66,12 @@ $colorBackground: #F5F5F5;
 		margin-top: 2.65em;
 		float: right;
 
+		.nav {
+			.nav-item-sitenavigationtoggle {
+				display: block;
+			}
+		}
+
 		.nav-navigation-toggle {
 			float: none;
 		}

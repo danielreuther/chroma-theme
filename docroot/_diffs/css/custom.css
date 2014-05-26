@@ -120,6 +120,15 @@ $colorHighlightGreen: #5CB260;
 					}
 				}
 			}
+
+			.nav-item-navtoggle,
+			.nav-item-sitenavigationtoggle {
+				display: none;
+
+				> a {
+					margin: 0;
+				}
+			}
 		}
 
 		#sign-in, #sign-out {

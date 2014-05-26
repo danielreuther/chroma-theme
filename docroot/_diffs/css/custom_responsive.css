@@ -21,6 +21,10 @@
 					padding: 3px 8px;
 			}
 		}
+
+		.nav-uncollapse {
+			display: block;
+		}
 	}
 
 	.aui .default {

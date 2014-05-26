@@ -13,19 +13,19 @@ AUI().ready(
 			siteBreadcrumbs.plug(A.Hudcrumbs);
 		}
 
-		var dockbar = A.one(".dashboard .dockbar");
+		var dockbar = A.one('.dockbar');
 
 		if (dockbar) {
 			new A.Toggler(
 				{
 					content: dockbar,
-					header: '#dockbarToggleBtn',
+					header: '#navigation .nav-item-dockbartoggle > a',
 					expanded: false
 				}
 			);
 		}
 
-		var btnNavigation = A.one('#navSiteNavigationNavbarBtn');
+		var btnNavigation = A.one('#navigation .nav-item-sitenavigationtoggle > a');
 
 		var navigation = A.one(Liferay.Data.NAV_SELECTOR);
 
