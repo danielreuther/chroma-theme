@@ -63,6 +63,16 @@
 		#subbanner {
 			.nav-banner-toggle {
 				display: block;
+				margin: 2px;
+			    position: fixed;
+			    right: 0;
+			    top: 0;
+	
+			    > a {
+			    	padding: 7px 10px;
+	    			vertical-align: top;
+	    			margin: 0;
+			    }
 			}
 		}
 	}
