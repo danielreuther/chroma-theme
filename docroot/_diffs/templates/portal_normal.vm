@@ -18,7 +18,7 @@
 
 $theme.include($body_top_include)
 
-#if ($is_signed_in && $is_omni_admin)
+#if ($is_signed_in)
 	#dockbar()
 #end
 
