@@ -106,6 +106,13 @@ $colorHighlightGreen: #5CB260;
 				}
 			}
 
+			.active {
+				> a {
+					background: #888888;
+    				box-shadow: none;
+				}
+			}
+
 			.dropdown-menu {
 				background: $colorHeading;
 				border-width: 0;
