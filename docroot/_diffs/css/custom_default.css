@@ -20,6 +20,7 @@ $colorBackground: #F5F5F5;
 
 	#banner {
 		height: 111px;
+		display: block;
 		
 		&:before {
 			content: '';
@@ -78,10 +79,6 @@ $colorBackground: #F5F5F5;
 
 		.nav-navigation-toggle {
 			float: none;
-		}
-
-		#dockbarToggleBtn {
-			display: none;
 		}
 	}
 	

@@ -25,6 +25,18 @@ AUI().ready(
 			);
 		}
 
+		var banner = A.one('#banner');
+
+		if (banner) {
+			new A.Toggler(
+				{
+					content: banner,
+					header: '#subbanner .nav-banner-toggle > a',
+					expanded: false
+				}
+			);
+		}
+
 		var btnNavigation = A.one('#navigation .nav-item-sitenavigationtoggle > a');
 
 		var navigation = A.one(Liferay.Data.NAV_SELECTOR);
@@ -39,7 +51,7 @@ AUI().ready(
 			);
 		}
 
-		var mainCarousel = A.one("#main-carousel");
+		var mainCarousel = A.one('#main-carousel');
 
 		if (mainCarousel) {
 			new A.Carousel(

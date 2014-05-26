@@ -52,6 +52,14 @@
 			margin-left: 0;
 		}
 
+		#banner {
+			@include box-shadow(0 0 4px 1px #888);
+
+			&.toggler-content-collapsed {
+				display: none;
+			}
+		}
+
 		#subbanner {
 			.nav-banner-toggle {
 				display: block;

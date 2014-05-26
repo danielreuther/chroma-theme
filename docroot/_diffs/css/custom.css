@@ -73,6 +73,10 @@ $colorHighlightGreen: #5CB260;
 		text-align: center;
 		vertical-align: middle;
 		color: $colorHeading;
+
+		.nav-banner-toggle {
+			display: none;
+		}
 	}
 
 	#navigation {
