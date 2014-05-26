@@ -18,7 +18,7 @@
 
 		.portlet-dockbar {
 			.btn-navbar {
-					padding: 3px 8px;
+				padding: 3px 8px;
 			}
 		}
 
@@ -55,6 +55,18 @@
 		#subbanner {
 			.nav-banner-toggle {
 				display: block;
+			}
+		}
+	}
+}
+
+@include respond-to(phone) {
+	.aui .default {
+		#banner {
+			.default-logo {
+				background: url(../images/logo_small.png) no-repeat;
+				height: 37px;
+				width: 240px;
 			}
 		}
 	}

@@ -11,16 +11,16 @@
 		.carousel-item {
 			height: 100%;
 			width: 100%;
-			background: #FFF no-repeat 310px top;
+			background: #FFF no-repeat right top;
 			@include border-radius(4px);
 			
 			> span {
 				display: block;
 				padding: 20px;
-				width: 270px;
+				width: 250px;
+				background: rgba(255 ,255, 255, 0.8);
+				margin: 10px;
 			}
-			
-			
 		}
 	}
 }
