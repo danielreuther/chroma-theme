@@ -1,9 +1,9 @@
 @import "compass";
 @import "mixins";
 
-@import url(custom_responsive.css);
 @import url(custom_default.css);
 @import url(custom_dashboard.css);
+@import url(custom_responsive.css);
 @import url(custom_extras.css);
 
 $colorHeading: #5E60B2;
