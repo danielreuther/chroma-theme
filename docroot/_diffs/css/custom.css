@@ -35,10 +35,6 @@ $colorHighlightInfo: #5CB260;
 
 	.portal-normal {
 		min-height: 100%;
-
-		&.dockbar-ready {
-			margin-top: 41px;
-		}
 	}
 
 	a {
