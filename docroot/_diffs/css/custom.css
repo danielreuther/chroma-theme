@@ -19,6 +19,15 @@ $colorHighlightInfo: #5CB260;
          url('../fonts/exo2/Exo2.0-Regular-webfont.svg#exo_2.0regular') format('svg');
 }
 
+@font-face {
+	font-family: 'exo2-black';
+	src: url('../fonts/exo2/Exo2.0-Black-webfont.eot');
+    src: url('../fonts/exo2/Exo2.0-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/exo2/Exo2.0-Black-webfont.woff') format('woff'),
+         url('../fonts/exo2/Exo2.0-Black-webfont.ttf') format('truetype'),
+         url('../fonts/exo2/Exo2.0-Black-webfont.svg#exo_2.0black') format('svg');
+}
+
 /* ---------- Base styles ---------- */
 
 .aui {
