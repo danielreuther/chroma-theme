@@ -1,1 +1,2 @@
 #set ($is_omni_admin=$permissionChecker.isOmniadmin())
+#set ($site_header_icon = $theme_display.getThemeSetting('site-header-icon'))

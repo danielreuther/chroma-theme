@@ -41,12 +41,6 @@ $colorBackground: #F5F5F5;
 			display: inline-block;
 			vertical-align: middle;
 		}
-
-		.default-logo {
-			background: url(../images/logo.png) no-repeat;
-			height: 52px;
-			width: 335px;
-		}
 	}
 
 	#main-content > .row-fluid,

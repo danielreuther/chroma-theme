@@ -26,12 +26,15 @@ $dockbarHeight: 41px;
 	    margin-top: $dockbarHeight;
 	    z-index: 1040;
 
-	    .default-logo {
-			background: url(../images/logo_square.png) no-repeat;
-			height: 200px;
-			width: 200px;
-			margin: 10px;
-		}
+	    .site-title {
+		    font-size: 26px;
+			margin: 26px 10px;
+			text-align: center;
+
+			.icon-stack {
+				font-size: 56px;
+			}
+	    }
 	}
 
 	#subbanner {

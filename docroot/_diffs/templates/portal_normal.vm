@@ -30,6 +30,10 @@ $theme.include($body_top_include)
 		<div id="heading">
 			<h1 class="site-title">
 				<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+					<span class="icon-stack">
+						<i class="icon-circle icon-stack-base"></i>
+						<i class="site-header-icon $site_header_icon"></i>
+					</span>
 					<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
 						$site_name
 					</span>

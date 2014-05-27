@@ -9,6 +9,7 @@
 		<template-extension>vm</template-extension>
 		<settings>
 			<setting key="portlet-setup-show-borders-default" value="false" />
+			<setting key="site-header-icon" value="icon-building" />
 		</settings>
 		<color-scheme id="01" name="Default">
 			<css-class>default</css-class>

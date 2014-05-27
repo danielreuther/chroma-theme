@@ -62,14 +62,25 @@ $colorHighlightInfo: #5CB260;
 	#banner {
 		margin: auto;
 
-		#heading {
-			.site-name {
-				display: none;
-			}
-		}
-
 		.site-title {
 			margin: 0;
+			font-family: 'exo2-black';
+			font-size: 34px;
+			
+			> a:hover, > a:focus {
+				text-decoration: none;
+			}
+			
+			.site-name {
+				color: #CCCCCC;
+				font-size: 1.5em;
+				margin-left: -8px;
+				vertical-align: middle;
+			}
+			
+			.site-header-icon {
+				text-shadow: 0 1px 0 #BBB;
+			}
 		}
 	}
 

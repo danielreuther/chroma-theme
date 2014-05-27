@@ -46,7 +46,7 @@
 			}
 		}
 	}
-	
+
 	.aui .dashboard {
 		#wrapper {
 			margin-left: 0;
@@ -80,12 +80,6 @@
 
 @include respond-to(phone) {
 	.aui .default {
-		#banner {
-			.default-logo {
-				background: url(../images/logo_small.png) no-repeat;
-				height: 37px;
-				width: 240px;
-			}
-		}
+
 	}
 }
