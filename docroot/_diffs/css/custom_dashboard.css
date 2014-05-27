@@ -8,7 +8,7 @@ $dockbarHeight: 41px;
 .aui .dashboard {
 	padding: 0;
 
-	#page-wrapper {
+	#header-wrapper {
 		margin-top: 41px;
 	}
 
@@ -35,8 +35,7 @@ $dockbarHeight: 41px;
 	}
 
 	#subbanner {
-		background: url(../images/bg_navbar.png) repeat-x $colorBackgroundHighlight;
-	    color: #555;
+		background: url(../images/bg_navbar.png) repeat-x;
 	    font-size: 28px;
 	    line-height: $dockbarHeight;
 	    margin: 0;

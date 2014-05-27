@@ -1,0 +1,16 @@
+#set ($main_color = "#9191EA")
+#set ($main_color_highlight = "#5E60B2")
+
+<style type="text/css">
+	.aui .default #header-wrapper, .aui .dashboard #subbanner {
+		background-color: $main_color;
+	}
+
+	.aui .portal-normal a, .aui .portal-normal h2, #subbanner {
+		color: $main_color_highlight;
+	}
+
+	.aui #navigation .nav .portal-normal .dropdown-menu {
+		background: $main_color_highlight;
+	}
+</style>

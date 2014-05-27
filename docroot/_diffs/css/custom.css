@@ -7,8 +7,8 @@
 @import url(custom_extras.css);
 
 $colorHeading: #5E60B2;
-$colorHighlight: #953537;
-$colorHighlightGreen: #5CB260;
+$colorHighlightWarn: #953537;
+$colorHighlightInfo: #5CB260;
 
 @font-face {
 	font-family: 'exo2';
@@ -33,15 +33,12 @@ $colorHighlightGreen: #5CB260;
 	}
 
 	a {
-		color: $colorHeading;
-
 		&:hover {
-			color: $colorHighlight;
+			color: $colorHighlightWarn;
 		}
 	}
 
 	h2 {
-		color: $colorHeading;
 		font-family: 'exo2';
 		font-size: 2.2em;
 	}
@@ -54,6 +51,8 @@ $colorHighlightGreen: #5CB260;
 	}
 
 	#banner {
+		margin: auto;
+
 		#heading {
 			.site-name {
 				display: none;
@@ -72,7 +71,7 @@ $colorHighlightGreen: #5CB260;
 		margin-top: 5px;
 		text-align: center;
 		vertical-align: middle;
-		color: $colorHeading;
+		text-shadow: 0 1px 0 #BBB;
 
 		.nav-banner-toggle {
 			display: none;
@@ -114,7 +113,6 @@ $colorHighlightGreen: #5CB260;
 			}
 
 			.dropdown-menu {
-				background: $colorHeading;
 				border-width: 0;
 				margin: 0;
 
@@ -143,7 +141,7 @@ $colorHighlightGreen: #5CB260;
 		}
 
 		#sign-in, #sign-out {
-			background-color: $colorHighlightGreen;
+			background-color: $colorHighlightInfo;
 			color: #EEEEEE;
 
 			&:after {
@@ -153,19 +151,19 @@ $colorHighlightGreen: #5CB260;
 			}
 
 			&:hover {
-				background-color: darken($colorHighlightGreen, 5%);
+				background-color: darken($colorHighlightInfo, 5%);
 			}
 		}
 
 		#sign-out {
-			background-color: $colorHighlight;
+			background-color: $colorHighlightWarn;
 
 			&:after {
 				content: "\f08b";
 			}
 
 			&:hover {
-				background-color: darken($colorHighlight, 5%);
+				background-color: darken($colorHighlightWarn, 5%);
 			}
 		}
 	}
