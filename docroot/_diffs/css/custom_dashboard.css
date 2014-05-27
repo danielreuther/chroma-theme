@@ -38,7 +38,7 @@ $dockbarHeight: 41px;
 	}
 
 	#subbanner {
-		background: url(../images/bg_navbar.png) repeat-x;
+		background-image: url(../images/bg_navbar_t.png);
 	    font-size: 28px;
 	    line-height: $dockbarHeight;
 	    margin: 0;
