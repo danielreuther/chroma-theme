@@ -1,3 +1,4 @@
+#set ($site_subheading = $theme_display.getThemeSetting('site-subheading'))
 #set ($site_header_icon = $theme_display.getThemeSetting('site-header-icon'))
 #set ($theme_color_main = $theme_display.getThemeSetting('theme-color-main'))
 #set ($theme_color_highlight = $theme_display.getThemeSetting('theme-color-highlight'))
