@@ -80,6 +80,10 @@
 
 @include respond-to(phone) {
 	.aui .default {
-
+		#banner {
+			.site-title {
+				font-size: 24px;
+			}
+		}
 	}
 }
