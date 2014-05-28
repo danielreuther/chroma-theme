@@ -19,9 +19,8 @@ $colorBackground: #F5F5F5;
 	#wrapper, #banner {
 		padding-left: 20px;
 		padding-right: 20px;
-	    max-width: 100%;
-	    min-width: 320px;
-    	width: 1080px;
+	    max-width: 1080px;
+	    min-width: 280px;
 	}
 
 	#banner {
