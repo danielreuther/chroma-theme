@@ -8,22 +8,11 @@ $dockbarHeight: 41px;
 .aui .dashboard {
 	padding: 0;
 
-	#header-wrapper {
-		margin-top: 41px;
-	}
-
-	#wrapper {
-		margin-left: $navigationWidth;
-	}
-
 	#banner {
 		background: #555555;
 	    position: fixed;
-	    bottom: 0;
-	    left: 0;
-	    top: 0;
 	    width: $navigationWidth;
-	    margin-top: $dockbarHeight;
+	    height: 100%;
 	    z-index: 1040;
 
 	    .site-title {
@@ -43,9 +32,7 @@ $dockbarHeight: 41px;
 	    line-height: $dockbarHeight;
 	    margin: 0;
         position: fixed;
-	    right: 0;
-	    top: 0;
-	    left: 0;
+		width: 100%;
 	}
 
 	#navigation {
@@ -89,6 +76,10 @@ $dockbarHeight: 41px;
 
 	#main-content {
 		padding: 0 20px;
+	}
+
+	#content {
+		margin-left: $navigationWidth;
 	}
 
 	.portlet-dockbar {
