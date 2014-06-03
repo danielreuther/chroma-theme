@@ -14,16 +14,20 @@
 					overflow: visible;
 				}
 			}
+			
+			.nav {
+				> li {
+					&.nav-item-sitenavigationtoggle {
+						display: block;
+					}
+				}
+			}
 		}
 
 		.portlet-dockbar {
 			.btn-navbar {
 				padding: 3px 8px;
 			}
-		}
-
-		.nav-uncollapse {
-			display: block;
 		}
 	}
 

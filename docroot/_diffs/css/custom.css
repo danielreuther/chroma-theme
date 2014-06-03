@@ -149,10 +149,6 @@ $colorHighlightInfo: #5CB260;
 			.nav-item-navtoggle,
 			.nav-item-sitenavigationtoggle {
 				display: none;
-
-				> a {
-					margin: 0;
-				}
 			}
 		}
 

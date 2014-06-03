@@ -25,23 +25,21 @@ AUI().ready(
 			);
 		}
 
-		var banner = A.one('#banner');
+		var btnNavigation = A.one('#navigation .nav-item-sitenavigationtoggle > a');
+
+		var navigation = A.one(Liferay.Data.NAV_SELECTOR);
+		var banner = A.one('.dashboard #banner');
 
 		if (banner) {
 			new A.Toggler(
 				{
 					content: banner,
-					header: '#subbanner .nav-banner-toggle > a',
+					header: btnNavigation,
 					expanded: false
 				}
 			);
 		}
-
-		var btnNavigation = A.one('#navigation .nav-item-sitenavigationtoggle > a');
-
-		var navigation = A.one(Liferay.Data.NAV_SELECTOR);
-
-		if (btnNavigation && navigation) {
+		else {
 			btnNavigation.on(
 				'click',
 				function(event) {

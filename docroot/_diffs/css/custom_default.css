@@ -71,14 +71,10 @@ $colorBackground: #F5F5F5;
 		margin-top: 2.65em;
 		float: right;
 
-		.nav {
-			.nav-item-sitenavigationtoggle {
-				display: block;
+		.navbar-inner {
+			> .nav-collapse, .nav-helpers {
+				float: right;
 			}
-		}
-
-		.nav-navigation-toggle {
-			float: none;
 		}
 	}
 	

@@ -72,6 +72,18 @@ $dockbarHeight: 41px;
 				height: auto;
     			overflow: visible;
 			}
+
+			.nav-helpers {
+				position: fixed;
+				right: 0;
+				/* TODO quick workaround */
+				margin-top: -203px;
+				
+				li {
+					float: left;
+					margin: 2px;
+				}
+			}
 		}
 	}
 
@@ -82,8 +94,6 @@ $dockbarHeight: 41px;
 	.portlet-dockbar {
 		.dockbar {
 			margin: 0;
-			position: fixed;
-			z-index: 1000;
 
 			.user-avatar-image {
 				max-height: 18px;

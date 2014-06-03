@@ -1,21 +1,20 @@
 <nav class="$nav_css_class navbar site-navigation" id="navigation" role="navigation">
 	<div class="navbar-inner">
-		<div class="nav-uncollapse nav-navigation-toggle">
+		<div class="nav-helpers">
 			<ol class="nav nav-pills">
 				<li class="nav-item-sitenavigationtoggle">
-					<a class="btn btn-navbar"><i class="icon-reorder"></i></a>
+					<a href="#"><i class="icon-reorder"></i></a>
 				</li>
-			</ol>
-		</div>
-
-		<div class="collapse nav-collapse">
-			<ul aria-label="#language ("site-pages")" class="nav nav-collapse nav-pills" role="menubar">
 				#if ($is_signed_in)
 					<li class="nav-item-dockbartoggle">
 						<a href="#"><i class="icon-gear"></i></a>
 					</li>
 				#end
+			</ol>
+		</div>
 
+		<div class="collapse nav-collapse">
+			<ul aria-label="#language ("site-pages")" class="nav nav-collapse nav-pills" role="menubar">
 				#foreach ($nav_item in $nav_items)
 						#set ($nav_item_attr_selected="")
 						#set ($nav_item_attr_has_popup="")
