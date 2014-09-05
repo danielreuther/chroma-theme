@@ -1,5 +1,5 @@
 <style type="text/css">
-	.aui .default #header-wrapper, .aui .dashboard #subbanner {
+	.aui .default #header-wrapper, .aui .dashboard #subbanner, .aui .dashboard #heading {
 		background-color: $theme_color_main;
 	}
 
@@ -7,7 +7,7 @@
 		color: $theme_color_main;
 	}
 
-	.aui .portal-normal a, .aui .portal-normal h2, #subbanner {
+	.aui .portal-normal a, .aui .portal-normal h2, .aui #subbanner {
 		color: $theme_color_highlight;
 	}
 

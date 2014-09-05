@@ -2,6 +2,7 @@
 @import "mixins";
 
 $colorBackgroundHighlight: #9191EA;
+$colorBackgroundSidebar: #555555;
 $navigationWidth: 220px;
 $dockbarHeight: 41px;
 
@@ -9,15 +10,21 @@ $dockbarHeight: 41px;
 	padding: 0;
 
 	#banner {
-		background: #555555;
+		background: $colorBackgroundSidebar;
 	    position: fixed;
 	    width: $navigationWidth;
 	    height: 100%;
 	    z-index: 1040;
+	}
 
-	    .site-title {
+	#heading {
+		background-image: url(../images/bg_navbar_t.png);
+		padding-top: 41px;
+
+		.site-title {
 		    font-size: 26px;
-			margin: 26px 10px;
+			background: $colorBackgroundSidebar;
+			padding: 26px 10px;
 			text-align: center;
 
 			.icon-stack {
@@ -64,7 +71,7 @@ $dockbarHeight: 41px;
 				position: fixed;
 				right: 0;
 				/* TODO quick workaround */
-				margin-top: -203px;
+				margin-top: -244px;
 				
 				li {
 					float: left;
