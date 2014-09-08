@@ -9,22 +9,22 @@
 	    font-family: 'fontawesome-alloy';
 	}
 
-	#wrapper-main-carousel {
-		height: 250px;
-		margin-bottom: 3em;
+	.main-carousel {
+		margin: -12px 0;
+		padding: 0 !important;
 
-		.carousel-item {
-			height: 100%;
-			width: 100%;
-			background: #FFF no-repeat right top;
-			@include border-radius(4px);
-			
-			> span {
-				display: block;
-				padding: 20px;
-				max-width: 250px;
-				background: rgba(255 ,255, 255, 0.8);
-				margin: 10px;
+		.carousel-container {
+			.carousel-item {
+				background: #FFF no-repeat right top;
+				@include border-radius(4px);
+
+				> span {
+					display: block;
+					padding: 20px;
+					max-width: 250px;
+					background: rgba(255 ,255, 255, 0.8);
+					margin: 10px;
+				}
 			}
 		}
 	}

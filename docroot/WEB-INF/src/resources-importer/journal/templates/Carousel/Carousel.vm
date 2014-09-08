@@ -1,0 +1,59 @@
+#set ($article_id = $reserved-article-id.getData())
+#set ($content_id = "carousel-${article_id}")
+
+<style>
+	.carousel-container .carousel-item {
+		height: 100%;
+		width: 100%;
+	}
+
+	#${content_id} {
+		height: ${height.data}px;
+	}
+</style>
+
+<div class="carousel-container" id="$content_id">
+	<div class="carousel">
+		#foreach ($item in $carousel-item.siblings)
+			#set ($carousel_item_class = "carousel-item")
+
+			#if ($velocityCount == 1)
+				#set ($carousel_item_class = "$carousel_item_class carousel-item-active")
+			#end
+
+			#if ($item.url-location.friendlyUrl)
+				<a class="$carousel_item_class" href="$item.url-location.friendlyUrl">
+			#end
+
+			<div class="$carousel_item_class" style="background-image: url(${item.image.data});">
+				#if ($item.tagline.data != "")
+					<span class="tagline">
+						<h2>$item.data</h2>
+						$item.tagline.data
+					</span>
+				#end
+			</div>
+
+			#if ($item.url-location.friendlyUrl)
+				</a>
+			#end
+		#end
+	</div>
+</div>
+
+<script type="text/javascript">
+	AUI().ready(
+		'aui-carousel',
+		function(A) {
+			new A.Carousel(
+				{
+					contentBox: '#${content_id} .carousel',
+					height: $height.data,
+					intervalTime: $duration.data,
+					height: '100%',
+					width: '100%'
+				}
+			).render();
+		}
+	);
+</script>

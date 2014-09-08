@@ -48,17 +48,5 @@ AUI().ready(
 				}
 			);
 		}
-
-		var mainCarousel = A.one('#main-carousel');
-
-		if (mainCarousel) {
-			new A.Carousel(
-				{
-					contentBox: mainCarousel,
-					height: '100%',
-					width: '100%'
-				}
-			).render();
-		}
 	}
 );

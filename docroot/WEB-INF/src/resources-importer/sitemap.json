@@ -1,19 +1,35 @@
 {
-	"layoutTemplateId": "2_columns_ii",
-	"privatePages": [
+	"layoutTemplateId": "1_column",
+	"publicPages": [
 		{
 			"columns": [
 				[
 					{
-						"portletId": "58"
+                        "portletId": "56",
+                        "portletPreferences": {
+                            "articleId": "Main Carousel.xml",
+                            "groupId": "${groupId}",
+                            "portletSetupShowBorders": "false",
+                            "portletSetupCss": {
+                            	"advancedData": {
+                            		"customCSSClassName": "main-carousel"
+                            	}
+                            }
+                        }
+                    }
+				],
+				[
+					{
+						"portletId": "56"
 					}
 				],
 				[
 					{
-						"portletId": "47"
+						"portletId": "56"
 					}
 				]
 			],
+			"layoutTemplateId": "1_2_columns_ii",
 			"friendlyURL": "/home",
 			"name": "Welcome",
 			"title": "Welcome"
