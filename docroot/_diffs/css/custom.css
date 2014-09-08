@@ -152,19 +152,20 @@ $colorHighlightInfo: #5CB260;
 			}
 
 			.dropdown-menu {
+				background-color: #EEE;
 				border-width: 0;
 				margin: 0;
+				left: 6px;
+				@include border-radius(0);
 
 				&:after, &:before {
 					border-width: 0;
 				}
 
 				a {
-					color: #FFF;
-
 					&:hover {
-						background: none;
-						text-decoration: underline;
+						background: #DDD;
+						color: #333;
 					}
 				}
 			}
