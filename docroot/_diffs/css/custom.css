@@ -123,10 +123,10 @@ $colorHighlightInfo: #5CB260;
 				margin: 0;
 				padding: 0 6px;
 
-				&.lfr-nav-item:first-child {
+				&:first-child {
 					border-width: 0 !important;
 
-					a:before {
+					&.lfr-nav-item a:before {
 					    content: "\f015";
 					    font-family: 'fontawesome-alloy';
 					}
@@ -243,5 +243,9 @@ $colorHighlightInfo: #5CB260;
 		.sign-out {
 			display: none;
 		}
+	}
+	
+	BLALA {
+		
 	}
 }
