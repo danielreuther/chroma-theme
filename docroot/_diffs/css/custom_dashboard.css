@@ -1,6 +1,7 @@
 @import "compass";
 @import "mixins";
 
+$colorBackgroundBody: #F9F9F9;
 $colorBackgroundHighlight: #9191EA;
 $colorBackgroundSidebar: #555555;
 $navigationWidth: 220px;
@@ -8,6 +9,16 @@ $dockbarHeight: 41px;
 
 .aui .dashboard {
 	padding: 0;
+
+	&.borderless-default {
+		background-color: #FFF;
+
+		.portlet-dockbar {
+			.navbar-inner {
+				background: $colorBackgroundBody;
+			}
+		}
+	}
 
 	#banner {
 		background: $colorBackgroundSidebar;
