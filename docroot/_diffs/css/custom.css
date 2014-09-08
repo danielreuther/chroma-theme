@@ -118,15 +118,26 @@ $colorHighlightInfo: #5CB260;
 			margin: 0;
 
 			> li {
-				margin-left: 2px;
+				border: 1px solid #888;
+				border-width: 0 0 0 1px;
+				margin: 0;
+				padding: 0 6px;
+
+				&:first-child {
+					border-width: 0;
+				}
 
 				> a {
-					background: #666;
+					background: none;
 					color: #BBB;
 					font-weight: 300;
+					text-transform: uppercase;
+					padding: 8px 12px;
+					margin: 0;
 					@include text-shadow(none);
+					@include border-radius(0);
 
-					&:hover, .selected {
+					&:hover {
 						color: #888;
 						background-color: #EEE;
 					}
@@ -135,7 +146,7 @@ $colorHighlightInfo: #5CB260;
 
 			.active {
 				> a {
-					background: #888888;
+					color: #EEE;
     				box-shadow: none;
 				}
 			}
@@ -165,8 +176,7 @@ $colorHighlightInfo: #5CB260;
 		}
 
 		#sign-in, #sign-out {
-			background-color: $colorHighlightInfo;
-			color: #EEEEEE;
+			color: lighten($colorHighlightInfo, 10%);
 
 			&:after {
 				content: "\f090";
@@ -175,19 +185,20 @@ $colorHighlightInfo: #5CB260;
 			}
 
 			&:hover {
-				background-color: darken($colorHighlightInfo, 5%);
+				background-color: $colorHighlightInfo;
+				color: #EEEEEE;
 			}
 		}
 
 		#sign-out {
-			background-color: $colorHighlightWarn;
+			color: lighten($colorHighlightWarn, 10%);
 
 			&:after {
 				content: "\f08b";
 			}
 
 			&:hover {
-				background-color: darken($colorHighlightWarn, 5%);
+				background-color: $colorHighlightWarn;
 			}
 		}
 	}

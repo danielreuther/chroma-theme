@@ -43,8 +43,14 @@ $dockbarHeight: 41px;
 
 			> li {
 				float: none;
-    			margin: 2px 10px;
     			text-align: center;
+				border-width: 1px 0 0 0;
+				margin: 2px 10px;
+				padding: 6px 0;
+
+    			> a {
+    				padding: 10px 8px;
+    			}
 			}
 			
 			.dropdown-menu {
