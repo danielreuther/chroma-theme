@@ -4,11 +4,6 @@
 /* ---------- Extras ---------- */
 
 .aui {
-	#layout_1 > a:before {
-	    content: "\f015";
-	    font-family: 'fontawesome-alloy';
-	}
-
 	.main-carousel {
 		margin: -12px 0;
 		padding: 0 !important;

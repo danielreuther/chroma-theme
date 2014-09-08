@@ -125,6 +125,11 @@ $colorHighlightInfo: #5CB260;
 
 				&:first-child {
 					border-width: 0 !important;
+
+					a:before {
+					    content: "\f015";
+					    font-family: 'fontawesome-alloy';
+					}
 				}
 
 				> a {
