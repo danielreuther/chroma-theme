@@ -69,11 +69,29 @@ $dockbarHeight: 41px;
 	}
 
 	#main-content {
-		padding: 0 20px;
+		padding: 20px 40px;
 	}
 
 	#content {
 		margin-left: $navigationWidth;
+	}
+
+	.portlet {
+		background: none repeat scroll 0 0 #FFFFFF;
+		border: 1px solid #D3D3D3;
+		margin-bottom: 18px;
+		@include border-radius(4px);
+
+		.portlet-topper {
+			height: 40px;
+			line-height: 40px;
+			@include background-image(linear-gradient(#FAFAFA, #E9E9E9));
+			@include border-radius(4px 4px 0 0);
+		}
+		
+		.navbar-inner {
+			@include box-shadow(none);
+		}
 	}
 
 	.portlet-dockbar {

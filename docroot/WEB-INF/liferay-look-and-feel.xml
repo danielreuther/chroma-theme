@@ -44,7 +44,7 @@
 					);
 				]]>
 			</setting>
-			<setting configurable="true" type="checkbox" key="portlet-setup-show-borders-default" value="false" />
+			<setting configurable="true" type="checkbox" key="portlet-setup-show-borders-default" value="true" />
 		</settings>
 		<color-scheme id="01" name="Default">
 			<css-class>default</css-class>

@@ -6,6 +6,7 @@
 @import url(custom_responsive.css);
 @import url(custom_extras.css);
 
+$colorBackgroundBody: #F9F9F9;
 $colorHeading: #5E60B2;
 $colorHighlightWarn: #953537;
 $colorHighlightInfo: #5CB260;
@@ -35,6 +36,7 @@ $colorHighlightInfo: #5CB260;
 
 	.portal-normal {
 		min-height: 100%;
+		background: $colorBackgroundBody;
 	}
 
 	a {
@@ -183,6 +185,26 @@ $colorHighlightInfo: #5CB260;
 	#footer {
 		text-align: right;
 		padding: 0 20px;
+	}
+
+	.portlet {
+		.portlet-topper {
+			padding-left: 10px;
+
+			.portlet-topper-toolbar {
+				right: 7px;
+
+				.caret {
+					display: none;
+				}
+			}
+
+			h1 {
+				color: #555;
+				font-size: 15px;
+				margin: 0;
+			}
+		}
 	}
 
 	.portlet-dockbar {
