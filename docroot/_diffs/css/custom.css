@@ -239,5 +239,9 @@ $colorHighlightInfo: #5CB260;
 			background: #FFFFFF;
 			@include box-shadow(none);
 		}
+
+		.sign-out {
+			display: none;
+		}
 	}
 }
