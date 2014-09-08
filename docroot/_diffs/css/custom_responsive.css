@@ -1,6 +1,8 @@
 @import "compass";
 @import "mixins";
 
+$colorBackgroundHelperButtons: #3A3A3A;
+
 @include respond-to(phone, tablet) {
 	.aui {
 		* {
@@ -35,7 +37,7 @@
 		#navigation {			
 			.navbar-inner {
 				> .nav-collapse {
-					background: #555;
+					background: $colorBackgroundHelperButtons;
 				    left: 0;
 				    position: absolute;
 				    right: 0;
@@ -78,6 +80,12 @@
 	    			vertical-align: top;
 	    			margin: 0;
 			    }
+			}
+		}
+
+		.portlet-dockbar {
+			.dockbar {
+				margin-left: 0;
 			}
 		}
 	}

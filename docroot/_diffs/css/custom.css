@@ -184,4 +184,11 @@ $colorHighlightInfo: #5CB260;
 		text-align: right;
 		padding: 0 20px;
 	}
+
+	.portlet-dockbar {
+		.navbar-inner {
+			background: #FFFFFF;
+			@include box-shadow(none);
+		}
+	}
 }

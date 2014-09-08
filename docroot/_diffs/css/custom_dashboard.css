@@ -19,7 +19,7 @@ $dockbarHeight: 41px;
 
 	#heading {
 		background-image: url(../images/bg_navbar_t.png);
-		padding-top: 41px;
+		padding-top: 40px;
 
 		.site-title {
 		    font-size: 26px;
@@ -34,12 +34,7 @@ $dockbarHeight: 41px;
 	}
 
 	#subbanner {
-		background-image: url(../images/bg_navbar_t.png);
-	    font-size: 28px;
-	    line-height: $dockbarHeight;
-	    margin: 0;
-        position: fixed;
-		width: 100%;
+		display: none;
 	}
 
 	#navigation {
@@ -68,15 +63,7 @@ $dockbarHeight: 41px;
 			}
 
 			.nav-helpers {
-				position: fixed;
-				right: 0;
-				/* TODO quick workaround */
-				margin-top: -244px;
-				
-				li {
-					float: left;
-					margin: 2px;
-				}
+				display: none;
 			}
 		}
 	}
@@ -91,14 +78,12 @@ $dockbarHeight: 41px;
 
 	.portlet-dockbar {
 		.dockbar {
-			margin: 0;
+			margin-left: 220px;
+			position: fixed;
+			z-index: 1040;
 
 			.user-avatar-image {
 				max-height: 18px;
-			}
-			
-			#_145_navSiteNavigationNavbarBtn {
-				display: none;
 			}
 		}
 	} 

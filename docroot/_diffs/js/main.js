@@ -13,7 +13,7 @@ AUI().ready(
 			siteBreadcrumbs.plug(A.Hudcrumbs);
 		}
 
-		var dockbar = A.one('.dockbar');
+		var dockbar = A.one('.default .dockbar');
 
 		if (dockbar) {
 			new A.Toggler(
@@ -25,8 +25,6 @@ AUI().ready(
 			);
 		}
 
-		var btnNavigation = A.one('#navigation .nav-item-sitenavigationtoggle > a');
-
 		var navigation = A.one(Liferay.Data.NAV_SELECTOR);
 		var banner = A.one('.dashboard #banner');
 
@@ -34,12 +32,14 @@ AUI().ready(
 			new A.Toggler(
 				{
 					content: banner,
-					header: btnNavigation,
+					header: '#_145_navSiteNavigationNavbarBtn',
 					expanded: false
 				}
 			);
 		}
 		else {
+			var btnNavigation = A.one('#navigation .nav-item-sitenavigationtoggle > a');
+
 			btnNavigation.on(
 				'click',
 				function(event) {
