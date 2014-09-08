@@ -12,21 +12,27 @@ $colorHighlightWarn: #953537;
 $colorHighlightInfo: #5CB260;
 
 @font-face {
-	font-family: 'exo2';
-	src: url('../fonts/exo2/Exo2.0-Regular-webfont.eot');
-    src: url('../fonts/exo2/Exo2.0-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/exo2/Exo2.0-Regular-webfont.woff') format('woff'),
-         url('../fonts/exo2/Exo2.0-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/exo2/Exo2.0-Regular-webfont.svg#exo_2.0regular') format('svg');
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/opensans/OpenSans-Regular.eot');
+    src: local('Open Sans'),
+		 local('OpenSans'),
+    	 url('../fonts/opensans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSans-Regular.woff') format('woff'),
+         url('../fonts/opensans/OpenSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'exo2-black';
-	src: url('../fonts/exo2/Exo2.0-Black-webfont.eot');
-    src: url('../fonts/exo2/Exo2.0-Black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/exo2/Exo2.0-Black-webfont.woff') format('woff'),
-         url('../fonts/exo2/Exo2.0-Black-webfont.ttf') format('truetype'),
-         url('../fonts/exo2/Exo2.0-Black-webfont.svg#exo_2.0black') format('svg');
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/opensans/OpenSans-Light.eot');
+    src: local('Open Sans Light'),
+		 local('OpenSans-Light'),
+    	 url('../fonts/opensans/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSans-Light.woff') format('woff'),
+         url('../fonts/opensans/OpenSans-Light.ttf') format('truetype');
 }
 
 /* ---------- Base styles ---------- */
@@ -37,6 +43,8 @@ $colorHighlightInfo: #5CB260;
 	.portal-normal {
 		min-height: 100%;
 		background: $colorBackgroundBody;
+		font-family: 'Open Sans';
+		font-weight: 400;
 	}
 
 	a {
@@ -46,7 +54,6 @@ $colorHighlightInfo: #5CB260;
 	}
 
 	h2 {
-		font-family: 'exo2';
 		font-size: 2.2em;
 	}
 
@@ -62,18 +69,21 @@ $colorHighlightInfo: #5CB260;
 
 		.site-title {
 			margin: 0;
-			font-family: 'exo2-black';
+			font-weight: 300;
 			font-size: 34px;
 			
 			> a:hover, > a:focus {
 				text-decoration: none;
 			}
 			
+			.logo > span {
+				vertical-align: middle;
+			}
+
 			.site-name {
 				color: #CCCCCC;
 				font-size: 1.5em;
 				margin-left: -0.2em;
-				vertical-align: middle;
 			}
 			
 			.site-header-icon {
@@ -83,13 +93,13 @@ $colorHighlightInfo: #5CB260;
 	}
 
 	#subbanner {
-		font-family: 'exo2';
 		font-size: 38px;
+		font-weight: 300;
 		line-height: 1.6em;
 		margin-top: 5px;
 		text-align: center;
 		vertical-align: middle;
-		text-shadow: 0 1px 0 #BBB;
+		text-shadow: 0 0 3px #bbb;
 
 		.nav-banner-toggle {
 			display: none;
@@ -111,9 +121,9 @@ $colorHighlightInfo: #5CB260;
 				margin-left: 2px;
 
 				> a {
-					font-family: 'exo2';
 					background: #666;
 					color: #BBB;
+					font-weight: 300;
 					@include text-shadow(none);
 
 					&:hover, .selected {
