@@ -46,6 +46,16 @@ $colorBackgroundHelperButtons: #3A3A3A;
 
 				    > .nav {
 				    	padding: 10px;
+
+						> li {
+							margin: 2px 10px;
+							padding: 6px 0;
+							border-width: 1px 0 0 0;
+
+							> a {
+								padding: 10px 8px;
+							}
+						}
 				    }
 				}
 			}

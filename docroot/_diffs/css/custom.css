@@ -124,7 +124,7 @@ $colorHighlightInfo: #5CB260;
 				padding: 0 6px;
 
 				&:first-child {
-					border-width: 0;
+					border-width: 0 !important;
 				}
 
 				> a {
