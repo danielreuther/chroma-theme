@@ -3,9 +3,9 @@
 		<div class="nav-helpers">
 			<ol class="nav nav-pills">
 				<li class="nav-item-sitenavigationtoggle">
-					<a href="#"><i class="icon-reorder"></i></a>
+					<a href="#"><i class="icon-reorder"></i> #language ("menu")</a>
 				</li>
-				#if ($is_signed_in)
+				#if ($show_dockbar)
 					<li class="nav-item-dockbartoggle">
 						<a href="#"><i class="icon-gear"></i></a>
 					</li>

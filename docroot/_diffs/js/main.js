@@ -26,20 +26,24 @@ AUI().ready(
 		}
 
 		var navigation = A.one(Liferay.Data.NAV_SELECTOR);
+		var btnNavigation = A.one('#_145_navSiteNavigationNavbarBtn');
+			
+		if (!btnNavigation) {
+			btnNavigation = A.one('#navigation .nav-item-sitenavigationtoggle > a');
+		}
+
 		var banner = A.one('.dashboard #banner');
 
 		if (banner) {
 			new A.Toggler(
 				{
 					content: banner,
-					header: '#_145_navSiteNavigationNavbarBtn',
+					header: btnNavigation,
 					expanded: false
 				}
 			);
 		}
 		else {
-			var btnNavigation = A.one('#navigation .nav-item-sitenavigationtoggle > a');
-
 			btnNavigation.on(
 				'click',
 				function(event) {

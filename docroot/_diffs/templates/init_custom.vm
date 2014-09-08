@@ -6,3 +6,9 @@
 #if (!$theme_display.getThemeSetting('portlet-setup-show-borders-default'))
 	#set ($css_class = "${css_class} borderless-default")
 #end
+
+#set ($show_dockbar = $is_signed_in)
+
+#if ($theme_display.getThemeSetting('hide-dockbar'))
+	#set ($show_dockbar = $is_signed_in && $permissionChecker.isGroupAdmin($group_id))
+#end

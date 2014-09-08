@@ -20,7 +20,7 @@
 
 $theme.include($body_top_include)
 
-#if ($is_signed_in)
+#if ($show_dockbar)
 	#dockbar()
 #end
 

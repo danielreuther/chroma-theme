@@ -54,6 +54,7 @@
 				]]>
 			</setting>
 			<setting configurable="true" type="checkbox" key="portlet-setup-show-borders-default" value="true" />
+			<setting configurable="true" type="checkbox" key="hide-dockbar" value="false" />
 		</settings>
 		<color-scheme id="01" name="Default">
 			<css-class>default</css-class>

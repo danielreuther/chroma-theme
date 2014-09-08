@@ -20,6 +20,12 @@ $dockbarHeight: 41px;
 		}
 	}
 
+	&.dockbar-ready {
+		.nav-helpers {
+			display: none;
+		}
+	}
+
 	#banner {
 		background: $colorBackgroundSidebar;
 	    position: fixed;
@@ -73,14 +79,22 @@ $dockbarHeight: 41px;
 			}
 		}
 
+		.nav-helpers {
+			position: fixed;
+			right: 0;
+			top: 0;
+
+			.nav-item-sitenavigationtoggle {
+				margin: 2px;
+				padding: 0;
+				border-width: 0;
+			}
+		}
+
 		.navbar-inner {
 			.nav-collapse {
 				height: auto;
     			overflow: visible;
-			}
-
-			.nav-helpers {
-				display: none;
 			}
 		}
 	}
@@ -91,6 +105,13 @@ $dockbarHeight: 41px;
 
 	#content {
 		margin-left: $navigationWidth;
+	}
+
+	#breadcrumbs {
+		.breadcrumb {
+			padding: 0 15px;
+			line-height: 40px;
+		}
 	}
 
 	.portlet {
