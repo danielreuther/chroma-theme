@@ -7,7 +7,7 @@ $colorBackgroundSidebar: #555555;
 $navigationWidth: 220px;
 $dockbarHeight: 41px;
 
-.aui .dashboard {
+.aui .color-scheme-dashboard {
 	padding: 0;
 
 	&.borderless-default {

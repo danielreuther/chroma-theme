@@ -8,6 +8,7 @@
 	<theme id="chroma" name="Chroma">
 		<template-extension>vm</template-extension>
 		<settings>
+			<setting configurable="true" type="checkbox" key="dashboard-view-for-logged-in-users" value="false" />
 			<setting configurable="true" type="text" key="site-subheading" value="A New Theme." />
 			<setting configurable="true" type="text" key="site-header-icon" value="icon-building" />
 			<setting configurable="true" type="text" key="theme-color-main" value="#9191EA">

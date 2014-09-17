@@ -1,5 +1,5 @@
 <style type="text/css">
-	.aui .default #header-wrapper, .aui .dashboard #subbanner, .aui .dashboard #heading {
+	.aui .color-scheme-default #header-wrapper, .aui .color-scheme-dashboard #subbanner, .aui .color-scheme-dashboard #heading {
 		background-color: $theme_color_main;
 	}
 
