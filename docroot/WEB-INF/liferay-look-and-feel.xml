@@ -10,8 +10,8 @@
 		<settings>
 			<setting configurable="true" type="checkbox" key="dashboard-view-for-logged-in-users" value="false" />
 			<setting configurable="true" type="text" key="site-subheading" value="A New Theme." />
-			<setting configurable="true" type="text" key="site-header-icon" value="icon-building" />
-			<setting configurable="true" type="text" key="theme-color-main" value="#9191EA">
+			<setting configurable="true" type="text" key="site-header-icon" value="icon-camera-retro" />
+			<setting configurable="true" type="text" key="theme-color-main" value="#D9AF79">
 				<![CDATA[
 					AUI().ready(
 						'aui-color-picker-popover',
@@ -37,7 +37,7 @@
 					);
 				]]>
 			</setting>
-			<setting  configurable="true" type="text" key="theme-color-highlight" value="#5E60B2">
+			<setting  configurable="true" type="text" key="theme-color-highlight" value="#A6691A">
 				<![CDATA[
 					AUI().ready(
 						'aui-color-picker-popover',
