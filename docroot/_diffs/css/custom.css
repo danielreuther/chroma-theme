@@ -83,7 +83,7 @@ $colorHighlightInfo: #5CB260;
 			.site-name {
 				color: #CCCCCC;
 				font-size: 1.5em;
-				margin-left: -0.2em;
+				margin-left: -0.1em;
 			}
 			
 			.site-header-icon {
@@ -243,9 +243,14 @@ $colorHighlightInfo: #5CB260;
 		.sign-out {
 			display: none;
 		}
-	}
-	
-	BLALA {
 		
+		.dockbar-user-notifications {
+			padding: 8px;
+			
+			.user-notifications-count {
+				margin: 0;
+				color: #BBBBBB;
+			}
+		}
 	}
 }
