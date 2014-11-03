@@ -20,13 +20,23 @@
 				],
 				[
 					{
-						"portletId": "56"
-					}
+                        "portletId": "56",
+                        "portletPreferences": {
+                            "articleId": "Did you know.xml",
+                            "groupId": "${groupId}",
+                            "portletSetupShowBorders": "false"
+                        }
+                    }
 				],
 				[
 					{
-						"portletId": "56"
-					}
+                        "portletId": "56",
+                        "portletPreferences": {
+                            "articleId": "Customize it.xml",
+                            "groupId": "${groupId}",
+                            "portletSetupShowBorders": "false"
+                        }
+                    }
 				]
 			],
 			"layoutTemplateId": "1_2_columns_ii",
