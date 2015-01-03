@@ -42,8 +42,28 @@
 					AUI().ready(
 						'aui-color-picker-popover',
 						function(A) {
+							var selectObj = A.one("#[@NAMESPACE@]theme-color-main");
+							var selectHighlightObj = A.one("#[@NAMESPACE@]theme-color-highlight");
+							var selectionObj = A.Node.create("<span/>");
+
+							selectObj.setStyle('width', '176px');
+
+							selectionObj.setStyle('backgroundColor', selectObj.get('value'));
+
+							selectionObj.setStyle('display', 'inline-block');
+							selectionObj.setStyle('verticalAlign', 'top');
+							selectionObj.setStyle('width', '22px');
+							selectionObj.setStyle('height', '22px');
+							selectionObj.setStyle('margin', '3px');
+							selectionObj.setStyle('border', '1px solid #555');
+
+							var selectionHighlightObj = selectionObj.cloneNode(true);
+
+							selectObj.insert(selectionObj, "after");
+							selectHighlightObj.insert(selectionHighlightObj, "after");
+
 							var colorPicker = new A.ColorPickerPopover({
-						        trigger: "#[@NAMESPACE@]theme-color-main",
+						        trigger: selectObj,
 						        zIndex: 2
 							}).render();
 
@@ -52,12 +72,15 @@
 
 								event.trigger.set('value', color);
 
+								selectionObj.setStyle('backgroundColor', color);
+
 								/* http://stackoverflow.com/questions/5560248 */
 								var percent = -35;
 								var num = parseInt(color.slice(1),16), amt = Math.round(2.55 * percent), R = (num >> 16) + amt, G = (num >> 8 & 0x00FF) + amt, B = (num & 0x0000FF) + amt;
 								var highlightColor = '#' + (0x1000000 + (R<255?R<1?0:R:255)*0x10000 + (G<255?G<1?0:G:255)*0x100 + (B<255?B<1?0:B:255)).toString(16).slice(1);
 
-								A.one("#[@NAMESPACE@]theme-color-highlight").set('value', highlightColor);
+								selectHighlightObj.set('value', highlightColor);
+								selectionHighlightObj.setStyle('backgroundColor', highlightColor);
 							});
 						}
 					);
@@ -68,13 +91,24 @@
 					AUI().ready(
 						'aui-color-picker-popover',
 						function(A) {
+							var selectObj = A.one("#[@NAMESPACE@]theme-color-highlight");
+							var selectionObj = selectObj.get('nextSibling');
+
+							selectObj.setStyle('width', '176px');
+
+							selectionObj.setStyle('backgroundColor', selectObj.get('value'));
+
 							var colorPicker = new A.ColorPickerPopover({
-						        trigger: "#[@NAMESPACE@]theme-color-highlight",
+						        trigger: selectObj,
 						        zIndex: 2
 							}).render();
 
 							colorPicker.on('select', function(event) {
-								event.trigger.set('value', event.color);
+								var color = event.color;
+
+								event.trigger.set('value', color);
+
+								selectionObj.setStyle('backgroundColor', color);
 							});
 						}
 					);
