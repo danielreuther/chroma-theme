@@ -13,7 +13,7 @@ AUI().ready(
 			siteBreadcrumbs.plug(A.Hudcrumbs);
 		}
 
-		var dockbar = A.one('.default .dockbar');
+		var dockbar = A.one('.color-scheme-default .dockbar');
 
 		if (dockbar) {
 			new A.Toggler(

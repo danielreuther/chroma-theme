@@ -3,7 +3,7 @@
 
 $colorBackground: #F5F5F5;
 
-.aui .default {
+.aui .color-scheme-default {
 	padding: 0;
 	background: $colorBackground;
 
