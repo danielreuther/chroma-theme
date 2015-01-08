@@ -81,4 +81,14 @@ $colorBackground: #F5F5F5;
 	#content {
 		min-height: 70%;
 	}
+
+	.portlet-dockbar {
+		.dockbar {
+			display: none;
+
+			&.toggler-content-expanded {
+				display: block;
+			}
+		}
+	} 
 }
