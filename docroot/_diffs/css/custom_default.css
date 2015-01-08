@@ -46,17 +46,36 @@ $colorBackground: #F5F5F5;
 	}
 
 	#main-content {
+		.portlet-layout {
+			position: relative;
+		}
+
 		.portlet-column {
-			border-left: 1px solid #EEEEEE;
 			margin-bottom: 12px;
 			margin-top: 12px;
 			min-height: 220px;
+			padding-left: 20px;
 		}
-		
-		.portlet-column-first {
+
+		.portlet-column:before {
+			border-left: 1px solid #EEEEEE;
+			bottom: 12px;
+			content: "";
+			position: absolute;
+			top: 12px;
+			margin-left: -20px;
+		}
+
+		.portlet-column-first:before,
+		.portlet-column-only:before {
 			border: none;
 		}
-		
+
+		.portlet-column-last,
+		.portlet-column-only {
+			padding-right: 20px;
+		}
+
 		.portlet-borderless {
 			padding: 12px;
 		}
