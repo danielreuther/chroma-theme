@@ -26,18 +26,13 @@ $colorBackground: #F5F5F5;
 
 	#banner {
 		height: 111px;
-		display: block;
-		
-		&:before {
-			content: '';
-			display: inline-block;
-			height: 100%;
-			vertical-align: middle;
-			margin-right: -0.25em;
-		}
+		box-sizing: border-box;
+		display: table;
+    	width: 100%;
 
 		#heading {
-			display: inline-block;
+			display: table-cell;
+    		white-space: nowrap;
 			vertical-align: middle;
 		}
 	}
@@ -68,10 +63,13 @@ $colorBackground: #F5F5F5;
 	}
 
 	#navigation {
-		margin-top: 2.65em;
-		float: right;
+		display: table-cell;
+		vertical-align: middle;
 
 		.navbar-inner {
+			margin-left: 20px;
+			min-height: auto;
+
 			> .nav-collapse, .nav-helpers {
 				float: right;
 			}
