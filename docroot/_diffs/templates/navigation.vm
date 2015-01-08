@@ -68,6 +68,12 @@
 						<a href="$themeDisplay.getURLSignOut()" id="sign-out">#language ("sign-out")</a>
 					</li>
 				#end
+
+				#if ($show_dockbar)
+					<li class="nav-item-dockbartoggle">
+						<a href="#"><i class="icon-gear"></i></a>
+					</li>
+				#end
 			</ul>
 		</div>
 	</div>

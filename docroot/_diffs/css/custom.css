@@ -174,11 +174,10 @@ $colorHighlightInfo: #5CB260;
 					}
 				}
 			}
+		}
 
-			.nav-item-navtoggle,
-			.nav-item-sitenavigationtoggle {
-				display: none;
-			}
+		.nav-helpers {
+			display: none;
 		}
 
 		#sign-in, #sign-out {

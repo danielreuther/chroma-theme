@@ -16,16 +16,17 @@ AUI().ready(
 		var dockbar = A.one('.color-scheme-default .dockbar');
 
 		if (dockbar) {
-			new A.Toggler(
-				{
-					content: dockbar,
-					header: '#navigation .nav-item-dockbartoggle > a',
-					expanded: false
-				}
-			);
+			A.all('#navigation .nav-item-dockbartoggle > a').each(function(btnDockbarToggle) {
+				new A.Toggler(
+					{
+						content: dockbar,
+						header: btnDockbarToggle,
+						expanded: false
+					}
+				);
+			});
 		}
 
-		
 		var banner = A.one('.dashboard #banner');
 		var btnNavigation = A.one('#navigation .nav-item-sitenavigationtoggle > a');
 
@@ -34,6 +35,9 @@ AUI().ready(
 
 			if (!btnNavigationDockbar) {
 				btnNavigationDockbar = btnNavigation;
+			}
+			else {
+				btnNavigation.hide();
 			}
 
 			new A.Toggler(

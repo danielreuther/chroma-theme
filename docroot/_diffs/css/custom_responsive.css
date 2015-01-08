@@ -16,12 +16,10 @@ $colorBackgroundHelperButtons: #3A3A3A;
 					overflow: visible;
 				}
 			}
-			
-			.nav {
-				> li {
-					&.nav-item-sitenavigationtoggle {
-						display: block;
-					}
+
+			.navbar-inner {
+				.nav-helpers {
+					display: block;
 				}
 			}
 		}

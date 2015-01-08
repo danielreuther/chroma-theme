@@ -91,6 +91,10 @@ $dockbarHeight: 41px;
 			}
 		}
 
+		.nav-item-dockbartoggle {
+			display: none;
+		}
+
 		.navbar-inner {
 			.nav-collapse {
 				height: auto;
