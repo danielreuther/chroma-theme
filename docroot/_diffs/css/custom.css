@@ -244,7 +244,9 @@ $colorHighlightInfo: #5CB260;
 		}
 		
 		.dockbar-user-notifications {
-			padding: 8px;
+			.user-notification-link {
+				padding: 8px;
+			}
 			
 			.user-notifications-count {
 				margin: 0;
