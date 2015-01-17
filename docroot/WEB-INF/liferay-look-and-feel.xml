@@ -118,6 +118,7 @@
 			<setting configurable="true" type="checkbox" key="hide-dockbar" value="false" />
 		</settings>
 		<color-scheme id="01" name="Default">
+			<default-cs>true</default-cs>
 			<css-class>default</css-class>
 		</color-scheme>
 		<color-scheme id="02" name="Dashboard">
