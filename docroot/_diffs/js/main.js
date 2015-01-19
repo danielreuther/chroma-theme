@@ -27,7 +27,7 @@ AUI().ready(
 			});
 		}
 
-		var banner = A.one('.dashboard #banner');
+		var banner = A.one('.color-scheme-dashboard #banner');
 		var btnNavigation = A.one('#navigation .nav-item-sitenavigationtoggle > a');
 
 		if (banner) {
