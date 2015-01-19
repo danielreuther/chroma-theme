@@ -27,6 +27,12 @@ $theme.include($body_top_include)
 <div id="header-wrapper">
 	<header id="banner" role="banner">
 		<div id="heading">
+			#if ($show_search_field && !$default_color_scheme)
+				<div id="sitesearch">
+					#parse ("$full_templates_path/search.vm")
+				</div>
+			#end
+
 			<h1 class="site-title">
 				<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
 					#if ($site_header_icon != 'no-site-header-icon')

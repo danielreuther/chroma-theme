@@ -209,6 +209,49 @@ $colorHighlightInfo: #5CB260;
 		}
 	}
 
+	#sitesearch {
+		display: table;
+
+		.site-search-button {
+			display: table-cell;
+			background-color: #6A6A6A;
+			padding: 4px 12px;
+			color: #BBBBBB;
+		}
+
+		.site-search-button:hover {
+			background-color: #FFFFFF;
+			text-decoration: none;
+		}
+
+		.site-search-form {
+			display: table-cell;
+			vertical-align: middle;
+			width: 100%;
+			overflow-x: hidden;
+			@include single-transition(width 0.3s ease);
+
+			.site-search-field {
+				width: 100%;
+				display: block;
+				@include border-radius(0);
+				margin: 0;
+				font-size: 12px;
+				line-height: 14px;
+				padding: 8px;
+				box-sizing: border-box;
+				background: #616161;
+				border: none;
+				color: #BBBBBB;
+				height: auto;
+			}
+
+			.site-search-field:focus {
+				@include box-shadow(none);
+			}
+		}
+	}
+
 	#footer {
 		text-align: right;
 		padding: 0 20px;

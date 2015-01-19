@@ -59,5 +59,37 @@ AUI().ready(
 				}
 			);
 		}
+
+		var siteSearch = A.one('#sitesearch');
+
+		if (siteSearch) {
+			var btnSearch = siteSearch.one('a');
+
+			var searchForm = siteSearch.one('.site-search-form');
+			var searchField = searchForm.one('.site-search-field');
+
+			btnSearch.on(
+				'click',
+				function(event) {
+					event.preventDefault();
+
+					if (searchForm.getStyle('width') == '0px') {
+						siteSearch.removeClass('site-search-collapsed');
+						searchField.focus();
+
+						return;
+					}
+					else {
+						if (searchField.get('value') == '') {
+							siteSearch.addClass('site-search-collapsed');
+
+							return;
+						}
+					}
+
+					searchForm.submit();
+				}
+			);
+		}
 	}
 );

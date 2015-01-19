@@ -20,3 +20,5 @@
 #else
 	#set ($css_class = "${css_class} color-scheme-dashboard")
 #end
+
+#set ($show_search_field = $getterUtil.getBoolean($theme_settings.getProperty('show-search-field')))

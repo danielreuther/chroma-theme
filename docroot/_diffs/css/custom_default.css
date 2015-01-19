@@ -95,6 +95,13 @@ $colorBackground: #F5F5F5;
 		}
 	}
 	
+	#sitesearch {
+		.site-search-button {
+			background-color: #6A6A6A;
+			color: #BBBBBB;
+		}
+	}
+
 	#content {
 		min-height: 70%;
 	}
@@ -107,5 +114,44 @@ $colorBackground: #F5F5F5;
 				display: block;
 			}
 		}
-	} 
+	}
+
+	@include respond-to(desktop) {
+		#sitesearch {
+			&.site-search-collapsed {
+				.site-search-form {
+					width: 0;
+				}
+
+				.site-search-button {
+					background: none;
+				}
+
+				.site-search-button:hover {
+					background: #6A6A6A;
+				}
+			}
+
+			.site-search-button {
+				background: #6A6A6A;
+				color: #BBBBBB;
+			}
+
+			.site-search-button:hover {
+				background-color: #FFFFFF;
+			}
+
+			.site-search-field {
+				float: right;
+			}
+
+			.site-search-form {
+				margin-right: -6px;
+				position: absolute;
+				right: 100%;
+				top: 0;
+				width: 160px;
+			}
+		}
+	}
 }

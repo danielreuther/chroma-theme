@@ -105,6 +105,11 @@ $dockbarHeight: 41px;
 		}
 	}
 
+	#sitesearch {
+		padding: 26px 10px 0;
+		background: $colorBackgroundSidebar;
+	}
+
 	#main-content {
 		padding: 20px 40px;
 	}

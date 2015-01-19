@@ -116,6 +116,7 @@
 			</setting>
 			<setting configurable="true" type="checkbox" key="portlet-setup-show-borders-default" value="true" />
 			<setting configurable="true" type="checkbox" key="hide-dockbar" value="false" />
+			<setting configurable="true" type="checkbox" key="show-search-field" value="false" />
 		</settings>
 		<color-scheme id="01" name="Default">
 			<default-cs>true</default-cs>

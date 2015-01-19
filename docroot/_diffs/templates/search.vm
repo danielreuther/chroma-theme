@@ -1,0 +1,7 @@
+<form name="search_fm" class="site-search-form" method="get" action="$theme_display.getURLCurrent()">
+	<input type="hidden" value="3" name="p_p_id">
+	<input type="hidden" value="maximized" name="p_p_state">
+	<input type="hidden" value="/search/search" name="_3_struts_action">
+	<input class="site-search-field" type="text" value="" title="#language ("search")" placeholder="#language ("search")" name="_3_keywords">
+</form>
+<a class="site-search-button" title="#language ("search")" href="#"><i class="icon-search"></i></a>

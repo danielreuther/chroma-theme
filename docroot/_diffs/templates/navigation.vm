@@ -15,6 +15,12 @@
 
 		<div class="collapse nav-collapse">
 			<ul aria-label="#language ("site-pages")" class="nav nav-collapse nav-pills" role="menubar">
+				#if ($show_search_field && $default_color_scheme)
+					<li id="sitesearch" class="nav-item-search site-search-collapsed">
+						#parse ("$full_templates_path/search.vm")
+					</li>
+				#end
+
 				#foreach ($nav_item in $nav_items)
 						#set ($nav_item_attr_selected="")
 						#set ($nav_item_attr_has_popup="")
