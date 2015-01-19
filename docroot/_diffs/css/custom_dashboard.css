@@ -32,6 +32,8 @@ $dockbarHeight: 41px;
 	    width: $navigationWidth;
 	    height: 100%;
 	    z-index: 1040;
+	    left: 0;
+	    @include single-transition(left 0.3s ease);
 	}
 
 	#heading {
