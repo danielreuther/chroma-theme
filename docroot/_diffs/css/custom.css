@@ -143,7 +143,7 @@ $colorHighlightInfo: #5CB260;
 					@include text-shadow(none);
 					@include border-radius(0);
 
-					&:hover {
+					&:hover, &.focus {
 						color: #888;
 						background-color: #EEE;
 					}
