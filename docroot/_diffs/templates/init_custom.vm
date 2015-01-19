@@ -13,8 +13,10 @@
 	#set ($show_dockbar = $is_signed_in && $permissionChecker.isGroupAdmin($group_id))
 #end
 
-#if ($theme_display.getColorScheme().getCssClass() == 'dashboard' || ($is_signed_in && $getterUtil.getBoolean($theme_settings.getProperty('dashboard-view-for-logged-in-users'))))
-	#set ($css_class = "${css_class} color-scheme-dashboard")
-#else
+#set ($default_color_scheme = $theme_display.getColorScheme().getCssClass() == 'default' && !($is_signed_in && $getterUtil.getBoolean($theme_settings.getProperty('dashboard-view-for-logged-in-users'))))
+
+#if ($default_color_scheme)
 	#set ($css_class = "${css_class} color-scheme-default")
+#else
+	#set ($css_class = "${css_class} color-scheme-dashboard")
 #end
