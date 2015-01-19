@@ -182,7 +182,7 @@ $colorHighlightInfo: #5CB260;
 		}
 
 		#sign-in, #sign-out {
-			color: lighten($colorHighlightInfo, 10%);
+			color: lighten($colorHighlightInfo, 15%);
 
 			&:after {
 				content: "\f090";
