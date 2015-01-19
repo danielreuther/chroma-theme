@@ -66,6 +66,7 @@ $colorHighlightInfo: #5CB260;
 
 	#banner {
 		margin: auto;
+		overflow-y: auto;
 
 		.site-title {
 			margin: 0;
