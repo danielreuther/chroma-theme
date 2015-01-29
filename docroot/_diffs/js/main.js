@@ -1,5 +1,5 @@
 AUI().ready(
-	'aui-carousel', 'liferay-hudcrumbs', 'liferay-navigation-interaction', 'aui-sortable-layout', 'aui-toggler',
+	'aui-carousel', 'liferay-hudcrumbs', 'liferay-navigation-interaction', 'event-outside', 'aui-sortable-layout', 'aui-toggler',
 	function(A) {
 		var navigation = A.one('#navigation');
 
