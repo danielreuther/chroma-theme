@@ -9,7 +9,7 @@
 
 #set ($show_dockbar = $is_signed_in)
 
-#if ($theme_settings.getProperty('hide-dockbar'))
+#if ($getterUtil.getBoolean($theme_settings.getProperty('hide-dockbar')))
 	#set ($show_dockbar = $is_signed_in && $permissionChecker.isGroupAdmin($group_id))
 #end
 
