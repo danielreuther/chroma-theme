@@ -199,10 +199,10 @@ $colorHighlightInfo: #5CB260;
 		#sign-in, #sign-out {
 			color: lighten($colorHighlightInfo, 15%);
 
-			&:after {
+			&:before {
 				content: "\f090";
 				font-family: 'fontawesome-alloy';
-				margin-left: 6px;
+				margin-right: 6px;
 			}
 
 			&:hover {
@@ -214,7 +214,7 @@ $colorHighlightInfo: #5CB260;
 		#sign-out {
 			color: lighten($colorHighlightWarn, 10%);
 
-			&:after {
+			&:before {
 				content: "\f08b";
 			}
 
