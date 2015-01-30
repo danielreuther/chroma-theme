@@ -65,6 +65,41 @@
 					</li>
 				#end
 
+				#if ($show_link_user_personal_menu)
+					<li>
+						<a href="#" id="personal-menu">#language ("my-places")</a>
+						<ul class="dropdown-menu child-menu" role="menu">
+							$my_sites_portlet_url.setParameter("groupId", "$user.getGroupId()")
+							#if ($user.hasPublicLayouts())
+								$my_sites_portlet_url.setParameter("privateLayout", "false")
+
+								<li>
+									<a href="$htmlUtil.escape($my_sites_portlet_url.toString())">
+										<span class="site-name">#language ("my-profile")</span>
+									</a>
+								</li>
+							#end
+							#if ($user.hasPrivateLayouts())
+								$my_sites_portlet_url.setParameter("privateLayout", "true")
+
+								<li>
+									<a href="$htmlUtil.escape($my_sites_portlet_url.toString())">
+										<span class="site-name">#language ("my-dashboard")</span>
+									</a>
+								</li>
+							#end
+							<li>
+								<a href="$my_account_url" title="#language ("my-account")" id="navigation-my-account-url">
+									<span class="site-name">#language ("my-account")</span>
+								</a>
+								<script>
+									Liferay.delegateClick('navigation-my-account-url', Liferay.Util.openInDialog);
+								</script>
+							</li>
+						</ul>
+					</li>
+				#end
+
 				#if (!$is_signed_in)
 					<li>
 						<a data-redirect="$is_login_redirect_required" href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>

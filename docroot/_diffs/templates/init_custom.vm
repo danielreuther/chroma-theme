@@ -13,6 +13,8 @@
 	#set ($show_dockbar = $is_signed_in && $permissionChecker.isGroupAdmin($group_id))
 #end
 
+#set ($show_link_user_personal_menu = !$show_dockbar && $getterUtil.getBoolean($theme_settings.getProperty('show-link-user-personal-menu')))
+
 #set ($default_color_scheme = $theme_display.getColorScheme().getCssClass() == 'default' && !($is_signed_in && $getterUtil.getBoolean($theme_settings.getProperty('dashboard-view-for-logged-in-users'))))
 
 #if ($default_color_scheme)

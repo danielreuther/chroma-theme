@@ -115,7 +115,28 @@
 			</setting>
 			<setting configurable="true" type="checkbox" key="dashboard-view-for-logged-in-users" value="false" />
 			<setting configurable="true" type="checkbox" key="portlet-setup-show-borders-default" value="true" />
-			<setting configurable="true" type="checkbox" key="hide-dockbar" value="false" />
+			<setting configurable="true" type="checkbox" key="hide-dockbar" value="false">
+				<![CDATA[
+					AUI().ready(
+						'node',
+						function(A) {
+							var selectObj = A.one("#[@NAMESPACE@]hide-dockbarCheckbox");
+							var showLinkCheckboxes = A.all('label[for^="[@NAMESPACE@]show-link-"]');
+							
+							showLinkCheckboxes.setStyle('margin-left', '20px');
+							
+							if (!selectObj.get('checked')) {
+								showLinkCheckboxes.hide();
+							}
+
+							selectObj.on('change', function (event) {
+								showLinkCheckboxes.toggle();
+							});
+						}
+					);
+				]]>
+			</setting>
+			<setting configurable="true" type="checkbox" key="show-link-user-personal-menu" value="false" />
 			<setting configurable="true" type="checkbox" key="show-search-field" value="false" />
 		</settings>
 		<color-scheme id="01" name="Default">

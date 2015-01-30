@@ -188,6 +188,14 @@ $colorHighlightInfo: #5CB260;
 			display: none;
 		}
 
+		#personal-menu {
+			&:before {
+				content: "\f007";
+				font-family: 'fontawesome-alloy';
+				margin-right: 6px;
+			}
+		}
+
 		#sign-in, #sign-out {
 			color: lighten($colorHighlightInfo, 15%);
 
