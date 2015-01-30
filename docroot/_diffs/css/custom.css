@@ -133,6 +133,13 @@ $colorHighlightInfo: #5CB260;
 					}
 				}
 
+				&.open {
+					> a {
+						color: #888;
+						background-color: #EEE;
+					}
+				}
+
 				> a {
 					background: none;
 					color: #BBB;
