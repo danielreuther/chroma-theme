@@ -239,6 +239,10 @@ $colorHighlightInfo: #5CB260;
 			text-decoration: none;
 		}
 
+		.site-search-button:focus {
+			text-decoration: none;
+		}
+
 		.site-search-form {
 			display: table-cell;
 			vertical-align: middle;
