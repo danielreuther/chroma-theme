@@ -87,7 +87,7 @@ $colorBackground: #F5F5F5;
 
 		.navbar-inner {
 			margin-left: 20px;
-			min-height: auto;
+			min-height: 0;
 
 			> .nav-collapse, .nav-helpers {
 				float: right;
