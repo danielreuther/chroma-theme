@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>br.com.thiagomoreira</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.6</version>
+	</parent>
+
+	<groupId>com.liferay.plugins</groupId>
+	<artifactId>chroma-theme</artifactId>
+	<version>0.9.4-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<name>Chroma Theme</name>
+	<description>Chroma is Liferay Theme Plugin that is meant to provide a pragmatic look and feel that can be adjusted via several configurable options. Its two different views allow for using it in public website–scenarios as well as for administration or dashboard-style interfaces while providing a common look and feel when switching between them.</description>
+
+	<contributors>
+		<contributor>
+			<email>tmoreira2020@gmail.com</email>
+			<name>Thiago Leão Moreira</name>
+			<timezone>-3</timezone>
+		</contributor>
+	</contributors>
+
+	<scm>
+		<connection>scm:git:git@github.com:danielreuther/chroma-theme.git</connection>
+		<developerConnection>scm:git:git@github.com:danielreuther/chroma-theme.git</developerConnection>
+		<url>https://github.com/danielreuther/chroma-theme</url>
+	</scm>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.liferay.maven.plugins</groupId>
+				<artifactId>liferay-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>theme-merge</goal>
+							<goal>build-thumbnail</goal>
+							<goal>build-css</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<liferayVersion>6.2.2</liferayVersion>
+					<parentTheme>_styled</parentTheme>
+					<pluginType>theme</pluginType>
+					<themeType>vm</themeType>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							</manifest>
+						<manifestEntries>
+							<Build-Time>${timestamp}</Build-Time>
+							<Implementation-Build>${buildNumber}</Implementation-Build>
+						</manifestEntries>
+					</archive>
+					<webResources>
+						<resource>
+							<directory>src/main/resources/WEB-INF</directory>
+							<targetPath>WEB-INF</targetPath>
+							<filtering>true</filtering>
+							<includes>
+								<include>liferay-plugin-package.properties</include>
+							</includes>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
