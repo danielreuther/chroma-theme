@@ -192,10 +192,14 @@ $colorHighlightInfo: #5CB260;
 					border-width: 0;
 				}
 
-				a {
-					&:hover {
-						background: #DDD;
-						color: #333;
+				> li {
+					> a {
+						text-transform: uppercase;
+
+						&:hover {
+							background: #DDD;
+							color: #333;
+						}
 					}
 				}
 			}
