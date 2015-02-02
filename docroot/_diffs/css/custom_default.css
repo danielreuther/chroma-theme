@@ -37,7 +37,8 @@ $colorBackground: #F5F5F5;
 		}
 	}
 
-	#main-content > .row-fluid,
+	#main-content > .portlet,
+	#main-content > .portlet-layout,
 	#content .breadcrumb {
 	    background: #FFF;
 	    margin-bottom: 18px;
