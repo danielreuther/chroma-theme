@@ -1,3 +1,7 @@
+## Workaround for LPS-44724. Affects latest Liferay releases, including 6.2 EE SP9 and 6.2 CE GA3.
+## This line can safely be removed in production environments.
+$utilLocator.findUtil("chroma-theme", "com.liferay.chromatheme.util.DefaultResourcesHelper").addDLDefaultResources($companyId, $groupId)
+
 #set ($article_id = $reserved-article-id.getData())
 #set ($content_id = "carousel-${article_id}")
 
