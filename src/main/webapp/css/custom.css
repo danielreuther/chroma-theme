@@ -24,6 +24,9 @@ $colorHeading: #5E60B2;
 $colorHighlightWarn: #953537;
 $colorHighlightInfo: #5CB260;
 
+$colorHudCrumbBackground: #000;
+$colorHudCrumbText: #FFF;
+
 @font-face {
 	font-family: 'Open Sans';
 	font-style: normal;
@@ -291,7 +294,24 @@ $colorHighlightInfo: #5CB260;
 			}
 		}
 	}
-
+	
+	.lfr-hudcrumbs {
+		position: fixed;
+		top: 0;
+		z-index: 600;
+		
+		.breadcrumb {
+			background-color: $colorHudCrumbBackground;
+			
+			li a {
+				color: $colorHudCrumbText;
+				text-shadow: none;
+			}
+		}
+		
+	}
+	
+	
 	#footer {
 		text-align: right;
 		padding: 0 20px;
