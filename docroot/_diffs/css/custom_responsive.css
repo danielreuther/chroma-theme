@@ -18,6 +18,18 @@ $colorBackgroundHelperButtons: #3A3A3A;
 			}
 
 			.navbar-inner {
+				.nav {
+					> li > a {
+						&.dropdown-toggle {
+							padding-right: 0;
+							
+							.lfr-nav-child-toggle {
+								padding: 6px 12px 6px 8px;
+							}
+						}
+					}
+				}
+
 				.nav-helpers {
 					display: block;
 				}

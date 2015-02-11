@@ -35,7 +35,7 @@
 
 					#if ($nav_item.hasChildren())
 						#set ($nav_item_attr_has_popup="aria-haspopup='true'")
-						#set ($nav_item_caret='<b class="icon-caret-down"></b>')
+						#set ($nav_item_caret='<span class="lfr-nav-child-toggle"><i class="icon-caret-down"></i></span>')
 						#set ($nav_item_css_class="$nav_item_css_class dropdown")
 						#set ($nav_item_link_css_class="dropdown-toggle")
 					#end
@@ -67,7 +67,7 @@
 
 				#if ($show_link_user_personal_menu)
 					<li>
-						<a href="#" id="personal-menu">#language ("my-places")</a>
+						<a href="#" id="personal-menu" class="lfr-nav-child-toggle dropdown-toggle">#language ("my-places") <i class="icon-caret-down"></i></a>
 						<ul class="dropdown-menu child-menu" role="menu">
 							$my_sites_portlet_url.setParameter("groupId", "$user.getGroupId()")
 							#if ($user.hasPublicLayouts())
