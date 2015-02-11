@@ -20,6 +20,10 @@ $colorBackgroundHelperButtons: #3A3A3A;
 			.navbar-inner {
 				.nav {
 					> li > a {
+						> span {
+							padding: 0;
+						}
+
 						&.dropdown-toggle {
 							padding-right: 0;
 							

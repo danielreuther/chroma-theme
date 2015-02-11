@@ -155,6 +155,10 @@ $colorHighlightInfo: #5CB260;
 						background-color: #EEE;
 					}
 				}
+
+				.drag-handle {
+					display: none;
+				}
 			}
 
 			.active {
