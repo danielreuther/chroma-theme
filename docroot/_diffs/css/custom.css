@@ -127,7 +127,7 @@ $colorHighlightInfo: #5CB260;
 				&:first-child {
 					border-width: 0 !important;
 
-					&.lfr-nav-item a:before {
+					&.lfr-nav-item > a:before {
 					    content: "\f015";
 					    font-family: 'fontawesome-alloy';
 					}
