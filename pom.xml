@@ -54,6 +54,26 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<header>com/mycila/maven/plugin/license/templates/LGPL-3.txt</header>
+					<mapping>
+						<scss>JAVADOC_STYLE</scss>
+					</mapping>
+					<properties>
+						<owner>Daniel Reuther</owner>
+					</properties>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
