@@ -1,3 +1,19 @@
+#*
+ * This file is part of Chroma Theme.
+ *
+ * Chroma Theme is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Chroma Theme is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Chroma Theme.  If not, see <http://www.gnu.org/licenses/>.
+ *#
 #set ($site_subheading = $theme_settings.getProperty('site-subheading'))
 #set ($site_header_icon = $theme_settings.getProperty('site-header-icon'))
 #set ($theme_color_main = $theme_settings.getProperty('theme-color-main'))
