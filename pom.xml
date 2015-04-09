@@ -86,7 +86,7 @@
 				<groupId>com.mycila</groupId>
 				<artifactId>license-maven-plugin</artifactId>
 				<configuration>
-					<header>${project.basedir}/LICENSE.txt</header>
+					<header>${project.basedir}/LICENSE</header>
 					<includes>
 						<include>src/**</include>
 					</includes>
@@ -106,11 +106,11 @@
 				</executions>
 			</plugin>
 			<plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
