@@ -21,12 +21,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>br.com.thiagomoreira</groupId>
-		<artifactId>parent</artifactId>
-		<version>0.6</version>
-	</parent>
-
 	<groupId>com.liferay.plugins</groupId>
 	<artifactId>chroma-theme</artifactId>
 	<version>0.9.4-SNAPSHOT</version>
@@ -35,10 +29,18 @@
 	<name>Chroma Theme</name>
 	<description>Chroma is Liferay Theme Plugin that is meant to provide a pragmatic look and feel that can be adjusted via several configurable options. Its two different views allow for using it in public website–scenarios as well as for administration or dashboard-style interfaces while providing a common look and feel when switching between them.</description>
 
+	<developers>
+		<developer>
+			<name>Daniel Reuther</name>
+			<email>daniel.reuther@liferay.com</email>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+
 	<contributors>
 		<contributor>
-			<email>tmoreira2020@gmail.com</email>
 			<name>Thiago Leão Moreira</name>
+			<email>tmoreira2020@gmail.com</email>
 			<timezone>-3</timezone>
 		</contributor>
 	</contributors>
@@ -48,6 +50,12 @@
 		<developerConnection>scm:git:git@github.com:danielreuther/chroma-theme.git</developerConnection>
 		<url>https://github.com/danielreuther/chroma-theme</url>
 	</scm>
+
+	<parent>
+		<groupId>br.com.thiagomoreira</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.6</version>
+	</parent>
 
 	<properties>
 		<liferay.version>6.2.2</liferay.version>
