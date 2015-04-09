@@ -89,12 +89,15 @@
 				<groupId>com.mycila</groupId>
 				<artifactId>license-maven-plugin</artifactId>
 				<configuration>
-					<header>com/mycila/maven/plugin/license/templates/LGPL-3.txt</header>
+					<header>${project.basedir}/LICENSE.txt</header>
+					<includes>
+						<include>src/**</include>
+					</includes>
 					<mapping>
 						<scss>JAVADOC_STYLE</scss>
 					</mapping>
 					<properties>
-						<owner>Daniel Reuther</owner>
+						<owner>Liferay, Inc.</owner>
 					</properties>
 				</configuration>
 				<executions>
