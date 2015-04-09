@@ -49,11 +49,16 @@
 		<url>https://github.com/danielreuther/chroma-theme</url>
 	</scm>
 
+	<properties>
+		<liferay.version>6.2.2</liferay.version>
+	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>com.liferay.maven.plugins</groupId>
 				<artifactId>liferay-maven-plugin</artifactId>
+				<version>${liferay.version}</version>
 				<executions>
 					<execution>
 						<phase>generate-sources</phase>
@@ -65,7 +70,8 @@
 					</execution>
 				</executions>
 				<configuration>
-					<liferayVersion>6.2.2</liferayVersion>
+					<liferayVersion>${liferay.version}</liferayVersion>
+					<autoDeployDir>${liferay.auto.deploy.dir}</autoDeployDir>
 					<parentTheme>_styled</parentTheme>
 					<pluginType>theme</pluginType>
 					<themeType>vm</themeType>
@@ -91,6 +97,12 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
