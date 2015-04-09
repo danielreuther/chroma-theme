@@ -18,7 +18,15 @@
 <html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
 
 <head>
-	<title>$the_title - $company_name</title>
+	<title>$the_title - $site_name</title>
+	#if ($layout.isIconImage())
+		<meta property="og:image" content="$theme_display.getPortalURL()$theme_display.getPathImage()/layout_icon?img_id=$layout.getIconImageId()" />
+	#end
+	<meta property="og:locale" content="$locale" />
+	<meta property="og:title" content="$the_title" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="$site_name" />
+	<meta property="og:url" content="$portal.getCurrentCompleteURL($request)" />
 
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 

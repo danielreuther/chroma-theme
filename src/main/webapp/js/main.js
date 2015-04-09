@@ -64,13 +64,15 @@ AUI().ready(
 		else {
 			var navigation = A.one(Liferay.Data.NAV_SELECTOR);
 
-			btnNavigation.on(
-				'click',
-				function(event) {
-					btnNavigation.toggleClass('open');
-					navigation.toggleClass('open');
-				}
-			);
+			if (btnNavigation) {
+				btnNavigation.on(
+					'click',
+					function(event) {
+						btnNavigation.toggleClass('open');
+						navigation.toggleClass('open');
+					}
+				);
+			}
 		}
 
 		var siteSearch = A.one('#sitesearch');
