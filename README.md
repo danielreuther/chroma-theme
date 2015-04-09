@@ -10,4 +10,4 @@ Features:
 - Fontawesome-based site logo that can be configured in the Theme's settings.
 - Option to hide the dockbar by default.
 
-![screenshot](https://raw.githubusercontent.com/danielreuther/chroma-theme/master/docroot/WEB-INF/releng/screenshots/1.jpg)
+![screenshot](https://raw.githubusercontent.com/danielreuther/chroma-theme/master/src/main/webapp/WEB-INF/releng/screenshots/1.jpg)
