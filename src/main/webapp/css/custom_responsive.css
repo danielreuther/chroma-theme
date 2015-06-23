@@ -92,20 +92,6 @@ $colorBackgroundHelperButtons: #3A3A3A;
 			}
 		}
 
-		#main-content {
-			.portlet-column {
-				margin-bottom: 12px;
-				margin-top: 12px;
-				min-height: 220px;
-				padding-left: 0px;
-			}
-
-			.portlet-column-last,
-			.portlet-column-only {
-				padding-right: 0px;
-			}
-		}
-
 		#sitesearch {
 			.site-search-form {
 				.site-search-field {
@@ -158,6 +144,20 @@ $colorBackgroundHelperButtons: #3A3A3A;
 		#banner {
 			.site-title {
 				font-size: 24px;
+			}
+		}
+
+		#main-content {
+			.portlet-column {
+				margin-bottom: 12px;
+				margin-top: 12px;
+				min-height: 220px;
+				padding-left: 0px;
+			}
+
+			.portlet-column-last,
+			.portlet-column-only {
+				padding-right: 0px;
 			}
 		}
 	}
