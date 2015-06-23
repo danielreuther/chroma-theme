@@ -16,6 +16,12 @@
 #set ($theme_color_main = $theme_settings.getProperty('theme-color-main'))
 #set ($theme_color_highlight = $theme_settings.getProperty('theme-color-highlight'))
 
+#if ($layout.isIconImage())
+	#set ($page_icon = "$theme_display.getPortalURL()$theme_display.getPathImage()/layout_icon?img_id=$layout.getIconImageId()")
+#else
+	#set ($page_icon = "$theme_display.getPortalURL()$site_logo")
+#end
+
 #if (!$getterUtil.getBoolean($theme_settings.getProperty('portlet-setup-show-borders-default')))
 	#set ($css_class = "${css_class} borderless-default")
 #end
