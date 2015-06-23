@@ -77,8 +77,8 @@
 							selectHighlightObj.insert(selectionHighlightObj, "after");
 
 							var colorPicker = new A.ColorPickerPopover({
-						        trigger: selectObj,
-						        zIndex: 2
+								trigger: selectObj,
+								zIndex: 2
 							}).render();
 
 							colorPicker.on('select', function(event) {
@@ -113,8 +113,8 @@
 							selectionObj.setStyle('backgroundColor', selectObj.get('value'));
 
 							var colorPicker = new A.ColorPickerPopover({
-						        trigger: selectObj,
-						        zIndex: 2
+								trigger: selectObj,
+								zIndex: 2
 							}).render();
 
 							colorPicker.on('select', function(event) {
